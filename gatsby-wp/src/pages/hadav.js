@@ -2,17 +2,20 @@ import './hadav.css'
 import * as React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+
 import Seo from "../components/seo"
+
  
 
 const VishalsPage = () => (
-  <Layout>
+  <div id="VB">
     <div class = "box">
-    <h1 style={{ textAlign: "center", color:"white"}}>VISHAL HADA</h1>
-    </div>
+    <h1 style={{ color:"white"}}>VISHAL HADA</h1>
+    <p>Hello!</p>
     <Link to="/">Go back to the homepage</Link>
-  </Layout>
+    </div>
+   
+  </div>
 )
 
 export const Head = () => <Seo title="Vishal's Page" />
