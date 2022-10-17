@@ -1,0 +1,7 @@
+.borderGrey {
+    border: 1px solid Grey;
+}
+
+.customHeight {
+    min-height: 60vh;
+}
