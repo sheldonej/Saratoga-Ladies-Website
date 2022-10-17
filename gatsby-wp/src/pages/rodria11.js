@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import {Q1, Q2, Q3, Q4} from "../components/adrianq/adrianqcomps"
 
 const rodria11 = () => (
   <Layout>
@@ -11,6 +12,12 @@ const rodria11 = () => (
        sed do eiusmod tempor incididunt ut labore et dolore magna 
        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div style={{ display: "flex", flexWrap: "wrap" }}>
+      <Q1 />
+      <Q2 />
+      <Q3 />
+      <Q4 />
+    </div>
     
     <Link to="/">Go back to the homepage</Link>
   </Layout>

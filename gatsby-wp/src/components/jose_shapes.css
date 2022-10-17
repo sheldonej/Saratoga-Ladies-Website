@@ -1,0 +1,70 @@
+.quadOne{
+    display:flex;
+    width: 400px;
+    height:400px;
+    background-color: blueviolet;
+    align-items: center;
+    justify-content: center;
+}
+.quadTwo{
+    display:flex;
+    width:400px;
+    height:400px;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center; 
+    
+}
+.quadThree{
+    display:flex;
+    width:400px;
+    height:400px;
+    background-color: black;
+    align-items: center;
+    justify-content: center; 
+    
+}
+.quadFour{
+    display:flex;
+    width:400px;
+    height:400px;
+    background-color: orange;
+    align-items: center;
+    justify-content: center; 
+    
+}
+.diamond {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transform: rotate(45deg);
+    
+}
+
+.circle {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-radius: 50%;
+    display: incline-block;
+    
+}
+
+.rectangle{
+    display: flex;
+    width: 300px;
+    height: 350px;
+    background-color: pink;
+    justify-items: left;
+}
+
+.random{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    justify-content: center;
+    align-items: center;
+}
