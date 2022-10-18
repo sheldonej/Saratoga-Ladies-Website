@@ -1,0 +1,10 @@
+.circles{
+    position:absolute;
+    right:330px;
+    top:80px;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(54, 5, 250);
+    border-radius: 50%;
+    
+  }

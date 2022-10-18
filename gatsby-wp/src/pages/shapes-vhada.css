@@ -1,0 +1,79 @@
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'One Two '
+    'Three Four'; 
+
+  background-color: #2196F3;
+ height: 100vh;
+
+  
+}
+
+.grid-container > div {
+  height:100%;
+  text-align: center;
+ 
+  font-size: 30px;
+  align-content: center;
+}
+
+.item1{
+  background-color: blue;
+  grid-area: One;
+}
+
+.item2{
+  background-color:green;
+  grid-area: Two;
+}
+
+.item3{
+  background-color: pink;
+  grid-area: Three;
+}
+
+.item4{
+  background-color: orange;
+  grid-area: Four;
+}
+
+
+#diamond {
+  position:absolute;
+  background: pink;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  transform:rotate(45deg);
+  left:365px;
+  top:120px;
+}
+
+
+	
+#text-box{
+  position:absolute;
+  bottom: 100px;
+  left:300px;
+  resize: none;
+  height: 300px;
+}
+
+#ct{
+  position:absolute;
+  bottom: 200px;
+  right:350px;
+  color:purple;
+}
+
+
+
