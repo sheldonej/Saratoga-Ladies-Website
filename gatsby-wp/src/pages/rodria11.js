@@ -13,10 +13,10 @@ const rodria11 = () => (
        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     <div style={{ display: "flex", flexWrap: "wrap" }}>
-      <Q1 />
-      <Q2 />
-      <Q3 />
-      <Q4 />
+      <Q1 background_color = "blue" />
+      <Q2 background_color = "green"/>
+      <Q3 background_color = {"pink"} text = {"Hello World! :') "}/>
+      <Q4 background_color = {"orange"} text = {"Goodbye World! :'( "}/>
     </div>
     
     <Link to="/">Go back to the homepage</Link>
