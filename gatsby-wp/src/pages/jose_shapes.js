@@ -1,30 +1,15 @@
 import React from "react"
 import Layout from "../components/layout"
 import "../components/jose_shapes.css"
+import { Q1, Q2 , Q3, Q4, Q5} from "../components/jose_comps"
 
 const IndexPage = () => (
   <Layout>
     <div style = {{ display: "flex", flexWrap: "wrap"}}>
-      <div className="quadOne">
-        <div className="diamond"> </div>
-      </div>
-
-      <div className="quadTwo">
-        <div className="circle"> </div>
-      </div>
-
-      <div className="quadThree">
-      <div className="rectangle"> 
-            <div className="text">Long block of text that continues for a while </div>
-        </div>
-      </div>
-    
-
-      <div className="quadFour">
-        <div className="random"> 
-          <div className="text">Centered Text</div>
-        </div>
-      </div>
+      <Q1 />
+      <Q2 />
+      <Q3 />
+      <Q4 /> 
     </div>
 
     <h1 style ={{ textAlign: "center"}}> TEST</h1>
