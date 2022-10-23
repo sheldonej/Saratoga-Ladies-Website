@@ -10,22 +10,22 @@
   }
 
   .item1{
-    background-color: blue;
+    
     grid-area: One;
   }
   
   .item2{
-    background-color:green;
+   
     grid-area: Two;
   }
   
   .item3{
-    background-color: pink;
+    
     grid-area: Three;
   }
   
   .item4{
-    background-color: orange;
+    
     grid-area: Four;
   }
   
