@@ -1,0 +1,15 @@
+.quadrant1 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+}
+
+.diamond {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transform: rotate(45deg);
+}
