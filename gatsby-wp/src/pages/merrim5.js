@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const VishalsPage = () => (
+const MatthewsPage = () => (
   <Layout>
     <h1 style={{ textAlign: "center"}}>Matthew Merritt</h1>
     <p style={{ textAlign: "center"}}>This is basic text to test on a page.</p>
@@ -12,6 +12,6 @@ const VishalsPage = () => (
   </Layout>
 )
 
-export const Head = () => <Seo title="Vishal's Page" />
+export const Head = () => <Seo title="Matthew's Page" />
 
-export default VishalsPage
+export default MatthewsPage
