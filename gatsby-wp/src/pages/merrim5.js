@@ -9,10 +9,12 @@ import { Q1, Q2, Q3, Q4} from "../components/matt_components"
 const MatthewsPage = () => (
   <Layout>
     <h1 style={{ textAlign: "center"}}>Matthew Merritt</h1>
-    <Q1/>
-    <Q2/>
-    <Q3/>
-    <Q4/>
+
+      <Q1  color={"lightblue"}/>
+      <Q2 color={"lightgreen"}/>
+      <Q3 color={"pink"} text={"thing1"}/>
+      <Q4 color={"lightorange"} text={"Some more things as props"}/>
+
     <p style={{ textAlign: "center"}}>This is basic text to test on a page.</p>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
