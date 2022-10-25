@@ -1,0 +1,103 @@
+:root {
+    --normal-header-height: 80px;
+    --normal-footer-height: auto;
+    --primary-bg-color: #fff;
+    --secondary-bg-color: #888;
+    
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.flex { display: flex; } 
+.vertical-center { justify-content: center; }
+.horizontal-center { align-items: center; }
+.small-text { font-size: 12px !important; }
+.medium-text { font-size: 14px; }
+.flow-row { flex-flow:  row; }
+.flow-col { flex-flow:  column; }
+.space-around {
+  justify-content: space-around;
+}
+.space-between {
+  justify-content: space-between;
+}
+.flex-start {
+  justify-content: flex-start;
+}
+.center { 
+    justify-content: center;
+    align-items: center;
+}
+
+/*-------------------------------------------------*/
+/* General Page CSS Code Below                     */
+/*-------------------------------------------------*/
+.filler-height-100 { min-height: 100px; }
+.filler-height-200 { min-height: 200px; }
+.filler-height-300 { min-height: 300px; }
+.filler-height-400 { min-height: 400px; }
+.filler-height-500 { min-height: 500px; }
+.bg-blue {background-color: aquamarine;}
+/* We will get rid of the above once we have finalized divs */
+
+header {
+    height: var(--normal-header-height);
+    width: 100%;
+    background-color:  var(--secondary-bg-color);
+    position: fixed;
+    top: 0px;
+}
+
+.page-wrapper {
+    padding-top: var(--normal-header-height);
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.content-shadow-none {
+    box-shadow: none;
+}
+
+.content-shadow-inset {
+    box-shadow: inset rgb(0 0 0) 0px 0px 8px 1px;
+}
+
+.content-shadow-drop {
+    box-shadow: rgb(0 0 0) 0px 0px 4px 1px;
+}
+
+.content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+.content-inner-wrapper {
+    margin: 0px 25px;
+    display: flex;
+    width: fit-content;
+    height: 100%;
+}
+
+footer {
+    height: var(--normal-footer-height);
+    width: 100%;
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    flex-flow: column;
+}
+  
+
