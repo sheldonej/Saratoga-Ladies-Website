@@ -1,34 +1,34 @@
 import * as React from 'react'
 import "../components/jose_shapes.css"
 
-export function Q1() {
+export function Q1(props) {
     return (
-        <div className="quadOne">
+        <div className="quadOne" style={{backgroundColor: props.color}}>
             <div className="diamond"> </div>
         </div>
     );
 }
-export function Q2() {
+export function Q2(props) {
     return (
-        <div className="quadTwo">
+        <div className="quadTwo" style={{backgroundColor: props.color}}>
             <div className="circle"> </div>
          </div>
     );
 }
-export function Q3() {
+export function Q3(props) {
     return (
-        <div className="quadThree">
+        <div className="quadThree" style={{backgroundColor: props.color}}>
         <div className="rectangle"> 
-              <div className="text">Long block of text that continues for a while </div>
+              <div className="text"> {props.text} </div>
           </div>
         </div>
     );
 }
-export function Q4() {
+export function Q4(props) {
     return (
-        <div className="quadFour">
+        <div className="quadFour" style={{backgroundColor: props.color}}>
         <div className="random"> 
-          <div className="text">Centered Text</div>
+          <div className="text"> {props.text}</div>
         </div>
       </div>
     );
