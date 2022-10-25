@@ -11,8 +11,10 @@ function Header(props) {
 
 function Footer(props) {
     return  (
-      <footer className="filler-height-200">
-  
+      <footer className="filler-height-200" style={
+        {backgroundColor: props.color}}>
+          <div className="text" style={{font: props.fontType}}> {props.text} </div> 
+        
       </footer>
     )
 }
@@ -30,7 +32,7 @@ function Footer(props) {
             <Header />
             { this.props.children }
           </div>
-          <Footer />
+          <Footer color={""} fontType={"15px Arial, serif"} text={"Test text"}/>
         </React.Fragment>
       )
     }
