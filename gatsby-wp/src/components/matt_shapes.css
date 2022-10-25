@@ -1,0 +1,76 @@
+.quadrant1 {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+}
+
+.diamond {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    align-items: center;
+    justify-content: center; 
+    transform: rotate(45deg);
+}
+
+
+.quadrant2 {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center; 
+}
+
+.quadrant3 {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(227, 111, 130);
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.textbox {
+    display: flex;
+    width: 50px;
+    height: 100px;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quadrant4 {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 25px;
+}
