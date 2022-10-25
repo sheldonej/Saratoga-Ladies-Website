@@ -1,0 +1,24 @@
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.arrange > div {
+    height:100%;
+    text-align: center;
+
+    font-size: 30px;
+    align-content: center;
+}
+
+.arrange {
+    display: grid;
+    grid-template-areas:
+    'One   Two '
+    'Three Four';
+
+    background-color: #2196F3;
+    height: 100vh;
+}
