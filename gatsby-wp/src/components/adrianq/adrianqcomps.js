@@ -1,28 +1,30 @@
 import * as React from 'react'
+import { useState } from 'react'
+import "./adrianqcomps.css"
 
 export function Q1(props) {
+    
+    const [isHovering, setIsHovering] = useState(false)
+    
     return (
             <div style={{height: "400px", width: "50%", backgroundColor: props.background_color}}>
-                <div style={{ 
-                    height: "200px", 
-                    width: "200px", 
-                    backgroundColor: "black", 
-                    margin: "100px", 
-                    transform: "rotate(45deg)"}}/>
+                <div className="div-1" 
+                     style={{ transform: isHovering ? "rotate(45deg) scale(1.1)" : "rotate(45deg)"}}
+                     onMouseEnter={()=>setIsHovering(true)}
+                     onMouseLeave={()=>setIsHovering(false)}/>
             </div>
     );
 }
 
 export function Q2(props) {
+    
+    const [isClicked, setIsClicked] = useState(false)
+
     return (
         <div style={{height: "400px", width: "50%", backgroundColor: props.background_color}}>
-            <div style={{
-                height: "200px",
-                width: "200px",
-                backgroundColor: "yellow",
-                borderRadius: "50%",
-                margin: "100px"
-            }}/>
+            <div className='div-2' 
+                 onClick={()=>setIsClicked(!isClicked)}
+                 style={{ transform: isClicked ? "scale(0.5)" : ""}}/>
         </div>
             
     );
