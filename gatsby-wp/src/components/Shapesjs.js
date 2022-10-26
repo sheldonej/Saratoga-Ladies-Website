@@ -8,6 +8,15 @@ export const Square = ({background, text}) => {
         </div>
     );
 }
+
+export const Square2nd = ({background, text}) => {
+    return (
+        <div style = { {backgroundColor:background}} class="component1">
+            <div id ="square2nd"></div>
+        </div>
+    );
+}
+
 export const TextAr = ({background, text}) => {
     return (
         <div style = { {backgroundColor:background}} class="component3">
