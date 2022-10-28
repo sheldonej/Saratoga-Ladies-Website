@@ -68,3 +68,21 @@
     justify-content: center;
     align-items: center;
 }
+
+.Columns{
+    display: flex;
+    width: 500px;
+    height: 100px;
+    background-color: red;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.Bar{
+    display: flex;
+    width: 1000px;
+    height: 100px; 
+    background-color: green; 
+    justify-content: center;
+    align-items: center; 
+}
