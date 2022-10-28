@@ -13,7 +13,6 @@ const IndexPage = () => (
     </div>
 
     <h1 style ={{ textAlign: "center"}}> TEST</h1>
-    <p style ={{ textAlign: "center"}}>Jose Idrovo </p>
   </Layout>
 )
 

@@ -10,6 +10,17 @@
     top:120px;
 }
 
+ #square2nd
+ {
+     position:absolute;
+     background: #9b79ff;
+     height: 250px;
+     width: 250px;
+     text-align: center;
+     left:600px;
+     top:300px;
+ }
+
  #textar
  {
      position:absolute;
