@@ -4,13 +4,17 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import "../components/matt_shapes.css"
-import { Q1, Q2, Q3, Q4} from "../components/matt_components"
+import { Q1, Q2, Q3, Q4, Component4} from "../components/matt_components"
 
 const MatthewsPage = () => (
   <Layout>
+    
     <h1 style={{ textAlign: "center"}}>Matthew Merritt</h1>
+      <div>
+        <Component4 image={"lightblue"}/>
+      </div>
 
-      <Q1  color={"lightblue"}/>
+      <Q1 color={"lightblue"}/>
       <Q2 color={"lightgreen"}/>
       <Q3 color={"pink"} text={"thing1"}/>
       <Q4 color={"lightorange"} text={"Some more things as props"}/>

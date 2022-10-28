@@ -99,3 +99,13 @@
     border:10px solid rgb(91, 147, 124);
     border-radius: 50%;
 }
+
+.parent {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 0px;
+}
