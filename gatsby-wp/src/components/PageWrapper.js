@@ -15,11 +15,15 @@ function Footer(props) {
     return  (
       <footer className="filler-height-200" style={
         {display: "flex", flexDirection: "row", flexWrap: "wrap", backgroundColor: props.color}}>
-          <div className="Columns" style={{backgroundColor: props.colorOne}}></div>
+          <div className="ColumnNoBorder" style={{ backgroundColor: props.colorOne}}>
+            </div>
           <div className="Columns" style={{
-            backgroundColor: props.colorTwo, borderLeftStyle: "dotted", borderRightStyle: "dashed"}}></div>
-          <div className="Columns" style={{backgroundColor: props.colorOne}}></div>
-          <div className="Bar"></div>
+            backgroundColor: props.colorTwo, 
+            }}>
+            </div>
+          <div className="Columns" style={{backgroundColor: props.colorOne }}></div>
+          <div className="Bar" style={{            
+            }}></div>
       </footer>
     )
 }
@@ -37,7 +41,7 @@ function Footer(props) {
             <Header />
             { this.props.children }
           </div>
-          <Footer colorOne={"magenta"} colorTwo={"red"} fontType={"15px Arial, serif"} text={"Test text"}/>
+          <Footer colorOne={"#2565AE"} colorTwo={"#2565AE"} fontType={"15px Arial, serif"} text={"Test text"}/>
         </React.Fragment>
       )
     }
