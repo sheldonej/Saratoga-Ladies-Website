@@ -1,5 +1,6 @@
 import * as React from 'react'
 import "../components/matt_shapes.css"
+import example from "../images/example.png"
 
 
 
@@ -40,12 +41,12 @@ export function Q4(props) {
 export function Component4(props) {
     return (
         <div>
-            <div id="circle-large" className="parent"> medium
-                <div id="circle-medium" className="child">
-
-                </div>
+            <div id="circle-large" className="parent" src={example} alt="example"> medium
+            
+                <img id="circle-medium" className="child" src={example} alt="example">
+                
+                </img>
             </div>
-
         </div>
 
     );
