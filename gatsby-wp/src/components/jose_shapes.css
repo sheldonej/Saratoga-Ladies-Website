@@ -69,16 +69,37 @@
     align-items: center;
 }
 
+.ColumnNoBorder{ 
+    width: 33.333%;
+    height: 200px;
+    background-color: red;
+    position: relative;
+}
 .Columns{
     width: 33.333%;
     height: 200px;
     background-color: red;
+    position: relative;
+}
+.Columns:after{
+   content: '';
+   border-left: 2px solid white;
+   position: absolute;
+   height: 70%;
+   left: 0;
+   top: 10%;
 }
 
 .Bar{
     width: 100%;
     height: 50px; 
-    background-color: green; 
-    justify-content: center;
-    align-items: center; 
+    background-color: #2565AE; 
+    position: relative;
 }
+.Bar:after{
+    content: '';
+    border-top: 2px solid white;
+    position: absolute;
+    width: 90%;
+    left: 5%;
+ }
