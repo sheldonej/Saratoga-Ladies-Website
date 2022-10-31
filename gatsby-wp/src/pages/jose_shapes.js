@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import "../components/jose_shapes.css"
-import { Q1, Q2 , Q3, Q4, Q5} from "../components/jose_comps"
+import { Q1, Q2 , Q3, Q4} from "../components/jose_comps"
 
 const IndexPage = () => (
   <Layout>

@@ -33,14 +33,9 @@ export function Q4(props) {
       </div>
     );
 }
-export function Q5(col) {
+
+export function footCol(props){
     return (
-        <div style={{height: "400px", width: "50%", backgroundColor: "green"}}>
-            <div style = {{
-                height: "400px",
-                width: "400px",
-                backgroundColor: col,
-            }}/>
-        </div>
-    );
+        <div Columns = {{backgroundColor: props.colorOne}}></div>
+    )
 }
