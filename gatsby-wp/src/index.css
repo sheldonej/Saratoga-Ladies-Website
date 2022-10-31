@@ -102,8 +102,8 @@ header {
 }
 
 .header-wrapper svg {
-    position: absolute;
-    bottom: -61px;
+    position: fixed;
+    top: calc(var(--normal-header-height));
     z-index: 99999;
 }
 
