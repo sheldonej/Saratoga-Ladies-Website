@@ -54,6 +54,8 @@ code {
 header {
     height: var(--normal-header-height);
     width: 100%;
+    display: flex;
+    align-items: center;
     background-color:  var(--secondary-bg-color);
     position: fixed;
     top: 0px;

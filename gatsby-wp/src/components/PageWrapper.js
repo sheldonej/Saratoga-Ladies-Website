@@ -1,14 +1,75 @@
 import * as React from "react"
 import '../index.css'
 import "../components/jose_shapes.css"
-import {Q1} from "../components/jose_comps"
+import "../components/header.css"
+import { Link, navigate } from "gatsby"
+import { useState } from 'react'
+
+const HeaderData = [
+  {
+    title: "TITLE A",
+    path: "a",
+    icon: "a",
+    cName: "a"
+  },
+
+  {
+    title: "TITLE B",
+    path: "b",
+    icon: "b",
+    cName: "b"
+  },
+
+  {
+    title: "TITLE C",
+    path: "c",
+    icon: "c",
+    cName: "c"
+  },
+
+  {
+    title: "TITLE D",
+    path: "d",
+    icon: "d",
+    cName: "d"
+  }
+
+];
 
 function Header(props) {
-        return (
-          <header>
-            
-          </header>
-        )
+  const [display, setDisplay] = useState( 'none' )
+
+  function handleClick() {
+    if (display == 'none'){
+      setDisplay( 'block' )
+    }
+    else {
+      setDisplay( 'none' )
+    }
+  }
+  
+  return (
+    <header>
+      <div className="container1">
+        <Link to="/rodria11">Adrian's Webpage</Link>
+      </div>
+      <div className="container2">
+        <Link to="/hadav">Vishal's Webpage</Link>
+      </div>
+      <div className="imageContainer" onClick={()=>navigate('/')}/>
+      <div className="container3">
+        <Link to="/merrim5">Matthew's Webpage</Link>
+      </div>
+      <div className="dropcontainer" onClick={()=>handleClick()}>
+        DROP CONTAINER
+        {HeaderData.map((item) => {
+          return ( <div className="dropdown-content" style={{display: display}}>
+            {item.title}
+            </div> )
+        })}
+      </div>
+    </header>
+  )
 }
 
 function Footer(props) {
