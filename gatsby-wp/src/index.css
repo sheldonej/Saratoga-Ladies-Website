@@ -1,10 +1,29 @@
 :root {
-    --normal-header-height: 80px;
+    --normal-header-height: 60px;
     --normal-footer-height: auto;
     --primary-bg-color: #fff;
     --secondary-bg-color: #888;
-    
+
+    /*RIBBON CSS*/
+    /*
+        OLD COLORS
+
+    */
+    --main-ribbon-color: #4169E1;
+    --secondary-ribbon-color: #355cd2;
+    --third-ribbon-color: #0041C2;
+
+
+    --saratoga-red: #c23b22;
+    --saratoga-white: #fff;
 }
+
+
+/*
+MAIN: #4169E1
+SSECONDARY: #2d57d6
+THIRD:
+*/
 
 body {
     margin: 0;
@@ -43,11 +62,26 @@ code {
 /*-------------------------------------------------*/
 /* General Page CSS Code Below                     */
 /*-------------------------------------------------*/
-.filler-height-100 { min-height: 100px; }
-.filler-height-200 { min-height: 200px; }
-.filler-height-300 { min-height: 300px; }
-.filler-height-400 { min-height: 400px; }
-.filler-height-500 { min-height: 500px; }
+.filler-height-100 {
+    min-height: 100px;
+    max-height: 100px; 
+}
+.filler-height-200 {
+    min-height: 200px;
+    max-height: 200px; 
+}
+.filler-height-300 {
+    min-height: 300px;
+    max-height: 300px; 
+}
+.filler-height-400 {
+    min-height: 400px;
+    max-height: 400px; 
+}
+.filler-height-500 {
+    min-height: 500px;
+    max-height: 500px; 
+}
 .bg-blue {background-color: aquamarine;}
 /* We will get rid of the above once we have finalized divs */
 
@@ -57,7 +91,28 @@ header {
     background-color:  var(--secondary-bg-color);
     position: fixed;
     top: 0px;
+    z-index: 99999;
 }
+.header-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 99999;
+
+}
+
+.header-wrapper svg {
+    position: absolute;
+    bottom: -61px;
+    z-index: 99999;
+}
+
+
+.header-wrapper  svg path {
+    fill: var(--secondary-bg-color);
+    z-index: 99999;
+}
+
 
 .page-wrapper {
     padding-top: var(--normal-header-height);
@@ -99,5 +154,239 @@ footer {
     display: flex;
     flex-flow: column;
 }
+
+.banner-wrapper {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    overflow: hidden;
+}
+
+.banner-filler {
+    min-height: 25px;
+    height: 25px;
+    max-height: 25px;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    background-color: #fff;
+
+}
+
+.banner-wrapper svg {
+    position: absolute;
+    transform: rotate(180deg);
+    bottom: 25px;
+}
+
+/*-------------------------------------------------------*/
+
+/*-------------------------------------------------------*/
+
+.banner-selector-wrapper {
+    position: absolute;
+   /* background-color: transparent;*/
+    background-color: transparent;
+    height: 30px;
+    min-width: 30px;
+    bottom: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-selector-line {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+    align-items: center;
+
+    height: 5px;
+    width: 400px;
+    background: var(--saratoga-red);
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.banner-selector-btn-wrapper {
+    position: absolute;
+    left: -1.75rem;
+    bottom: -1.35rem;
+    height: 48px;
+    width: 48px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+
+}
+
+.banner-selector-line button:nth-of-type(1) {
+    opacity: 0;
+    display: inline-block;
+    position: absolute;
+    left: -1.75rem;
+    bottom: -1.35rem;
+    height: 48px;
+    width: 48px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.banner-selector-line svg:nth-of-type(1) {
+    position: absolute;
+    left: -1.75rem;
+    bottom: -1.35rem;
+    cursor: pointer;
+    
+}
+
+.banner-selector-line svg:nth-of-type(2) {
+    position: absolute;
+    right: -1.75rem;
+    bottom: -1.35rem;
+    cursor: pointer;
+}
+
+.banner-select-line-circle {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: var(--saratoga-red);
+}
+
+
+.banner-select-line-circle img{
+    height: 25px;
+    width: 25px;
+    margin: 0px;
+    border-radius: 50%;
+}
+
+
+
+
+
+ /*---------------------------------------------------
+ 
+ ------------------------------------------------------*/ 
+.ribbon-wrapper {
+    position: absolute;
+    /*top: 75%;*/
+    top: calc(-0.75*3vw + 375px );
+    width: 100%;
+    z-index: 999;
+}
+.ribbon {
+    font-size: 20px !important;
+    /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+   
+    width: 60%;
+    min-height: 80px;
+    /*clip-path: path('M0 0 Q 20 1.25, 40 0');*/
+       
+    position: relative;
+    background: var(--main-ribbon-color);
+    /*background: #ba89b6;*/
+    /*background: #4863A0;*/
+    color: #fff;
+    text-align: center; 
+    padding: 1em 2em; /* Adjust to suit */
+    margin: 2em auto; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+    /*border-radius: 7.5px 7.5px 7.5px 7.5px;*/
+    border-radius: 7.5px 7.5px 20px 20px;
+    /*box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
+    /*box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;*/
+   }
+
+
+   .ribbon:before, .ribbon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -0.7em;
+    border: 1.55em solid #986794;
+    border: 1.55em solid var(--secondary-ribbon-color);
   
+    /*border: 1.55em solid #123456;*/
+    z-index: -9;
+   }
+
+   .ribbon:before {
+    left: -2em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+    transform: rotate(-10deg);
+    margin: 0.75px;
+   }
+
+   .ribbon:after {
+    right: -2em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+    transform: rotate(10deg);
+    margin: 0.75px;
+   }
+
+   .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: var(--third-ribbon-color) transparent transparent transparent;
+    /*border-color: #804f7c transparent transparent transparent;*/
+    /*border-color: #3c6f94 transparent transparent transparent;*/
+    bottom: -0.7em;
+    z-index: -6;
+
+
+    /*content: "";
+    position: absolute;
+    display: block;
+    bottom: -0.7em;
+    border-color: #804f7c transparent transparent transparent;
+    z-index: -9;
+    /* top: 0; */
+   }
+
+   .ribbon .ribbon-content:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+    transform: rotate(-10deg);
+    margin: 4.75px;
+   }
+   .ribbon .ribbon-content:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+    transform: rotate(10deg);
+    margin: 4.75px;
+   }
+
+/********************************************************************************/
+
+.ribbon svg {
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+.ribbon svg:nth-of-type(1) {
+    bottom: -0.5px;
+    left: 25px;
+    width: calc(100% - 50px);
+}
+
+.ribbon svg:nth-of-type(2) {
+    bottom: calc(100% - 0.5px);
+    left: 4.5px;
+    width: calc(100% - 9px);
+   
+}
+
+.ribbon svg:nth-of-type(2) path{
+    fill: var(--main-ribbon-color);
+    padding-bottom: 1px;
+}
+
+.ribbon svg path {
+    fill: #fff;
+}
 
