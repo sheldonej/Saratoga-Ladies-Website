@@ -74,12 +74,12 @@ const ImagesArray = [
             </div>
             <div className="ribbon-wrapper">
               <div className="ribbon">
-                <svg viewBox="0 0 40 1"><path d="M0 0 Q 20 2.75, 40 0" /></svg>
-                <strong className="ribbon-content"></strong>
-                <svg viewBox="0 0 40 1"><path d="M0 0 Q 20 2.75, 40 0" /></svg>
+                <svg viewBox="0 0 40 2"><path d="M0 0 Q 20 2.75, 40 0" /></svg>
+                <strong className="ribbon-content">&#x203A;</strong>
+                <svg viewBox="0 0 40 2"><path d="M0 0 Q 20 2.75, 40 0" /></svg>
               </div>
             </div>
-            <svg viewBox="0 0 40 1" fill="#fff"><path d={`M0 0 Q 20 2.75, 40 0`} /></svg>
+            <svg viewBox="0 0 40 2" fill="#fff"><path d={`M0 0 Q 20 2.75, 40 0`} /></svg>
             <div className="banner-filler" onClick={() => this.decrementIndex()}/>
           </div>        
         </React.Fragment>
