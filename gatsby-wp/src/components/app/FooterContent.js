@@ -7,10 +7,9 @@
     
 import * as React from "react"
 import "../../index.css"
-import "../jose_shapes.css"
+import "../app/footer.css"
 import "../header.css"
 
-/* For mobile phones: */
 
 function FooterComp(props) {
     return (
