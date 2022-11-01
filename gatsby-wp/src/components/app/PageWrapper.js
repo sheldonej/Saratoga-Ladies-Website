@@ -5,6 +5,7 @@ import "../header.css"
 import { Link, navigate } from "gatsby"
 import { useState } from 'react'
 import FooterComp from "./FooterContent"
+import HeaderContent from "./HeaderContent"
 
 function Header(props) {
   return (
