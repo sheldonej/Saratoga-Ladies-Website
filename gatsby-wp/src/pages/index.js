@@ -17,8 +17,11 @@ const IndexPage = () => (
   <React.Fragment>
     <PageWrapper >
       <SlideshowBanner />
-      <PageContentContainer height={400} >1</PageContentContainer> 
+      <PageContentContainer height={400} >
+        {/*  <Mission></Mission>  */}
+      </PageContentContainer> 
       <Mission></Mission>
+      {/* THIS CODE ABOVE NEEDS TO BE IN THE THE PAGE CONTAINER COMPONENT AS FOLLOWS */}
       <PageContentContainer height={400} dropShadow> 2 </PageContentContainer> 
       <PageContentContainer height={400} > 3 </PageContentContainer> 
       <PageContentContainer height={400} dropShadow> 4 </PageContentContainer> 

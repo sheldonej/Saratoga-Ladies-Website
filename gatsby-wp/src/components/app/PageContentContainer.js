@@ -30,9 +30,9 @@ import * as React from "react"
 
     componentDidMount(){ this.updateStyles() }
     componentDidUpdate(prevProps, prevState) { 
-        if(JSON.stringify(this.props) != JSON.stringify(prevProps)){
-            this.updateStyles()
-        } 
+       // if(JSON.stringify(this.props) != JSON.stringify(prevProps)){
+       //     this.updateStyles()
+       // } 
     }
 
     render() {
