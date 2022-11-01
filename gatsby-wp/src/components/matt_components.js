@@ -41,11 +41,23 @@ export function Q4(props) {
 export function Component4(props) {
     return (
         <div>
-            <div id="circle-large" className="parent" src={example} alt="example"> medium
-            
-                <img id="circle-medium" className="child" src={example} alt="example">
-                
-                </img>
+
+            // outer div
+            <div className="parent">
+                // outer circle
+                <div id="circle-large" class="overflow-hidden"> medium
+                    <img src={example} alt="outer circle image" />
+
+
+                    // inner div
+                    <div className="child" src={example} alt="example">
+                        // innter circle
+                        <div id="circle-medium" class="overflow-hidden">
+                            <img src={example} alt="outer circle image" />
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

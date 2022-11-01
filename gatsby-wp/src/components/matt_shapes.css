@@ -109,3 +109,8 @@
     transform: translateX(-50%);
     bottom: -10px;
 }
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
