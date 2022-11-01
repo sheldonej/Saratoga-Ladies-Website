@@ -1,7 +1,7 @@
 import * as React from "react"
-import '../index.css'
-import "../components/jose_shapes.css"
-import "../components/header.css"
+import "../../index.css"
+import "../jose_shapes.css"
+import "../header.css"
 import { Link, navigate } from "gatsby"
 import { useState } from 'react'
 
