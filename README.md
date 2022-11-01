@@ -4,8 +4,7 @@
 
 <!-- PROJECT SHIELDS -->
 [![RCOS Contributors][contributors-shield]][contributors-url]
-[![Other Contributors][other-contributors-shield]][contributors-url]
-[![Apache License][license-shield]][license-url]
+[![GPL License][license-shield]][license-url]
 
 
 <!-- PROJECT LOGO -->
@@ -37,10 +36,9 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#acknowledgments">Resources</a></li>
+    <li><a href="#resources">Resources</a></li>
   </ol>
 </details>
 
@@ -64,6 +62,51 @@ The Saratoga Ladies Website relies on the following:
 | [![Bootstrap]][Bootstrap-url] |                                   |
 [![GraphQL]][GraphQL-url]
 
+<!-- GETTING STARTED -->
+## Getting Started
+To get a local copy of Saratoga Ladies Website running on your personal machine, follow these simple steps.
+
+### Prerequisites
+
+To avoid issues with cloning and testing the repository, ensure the following technologies are up to date:
+1. npm
+    ```sh
+    npm install npm@latest -g
+    ```
+
+### Installation
+
+_The following steps allow a new developer to install the main repository and begin testing locally._
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/sheldonej/Saratoga-Ladies-Website.git
+   ```
+2. Install NPM packages in the gatsby-wp folder
+   ```sh
+   cd gatsby-wp
+   npm install
+   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Follow these instructions to submit your contributions to the project. 
+
+1. Branch the Project
+3. Commit your Changes (`git commit -a -m 'Your Feature's commit message'`)
+4. Push to the right Branch (`git push origin branch_you_commit_to`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
+## License
+
+This project is distributed under GPL-2.0 License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- Resources -->
 ## Resources
 
@@ -71,10 +114,10 @@ Use this space to list resources you find helpful and would like to give credit 
 
 * [Choose an Open Source License](https://choosealicense.com)
 * [React JS Full Course for Beginners](https://www.youtube.com/watch?v=RVFAyFWO4go&t=39s&ab_channel=DaveGray)
-* [Node.js Full Course for Beginners](https://www.youtube.com/watch?v=f2EqECiTBL8&start=11729&ab_channel=DaveGray)
 * [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
 * [Malven's Grid Cheatsheet](https://grid.malven.co/)
 * [150 Badges for Github](https://dev.to/envoy_/150-badges-for-github-pnk)
+* [Even More Markdown Badges](https://github.com/Ileriayo/markdown-badges)
 * [Img Shields](https://shields.io)
 * [React Icons](https://react-icons.github.io/react-icons/search)
 
@@ -84,11 +127,10 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/badge/all_contributors-9-red.svg?style=flat-square
-[other-contributors-shield]: https://img.shields.io/badge/contributors-0-red.svg?style=flat-square
-[contributors-url]: https://github.com/GroopFit/GroopFit-Web-App/graphs/contributors
-[license-shield]: https://img.shields.io/badge/License-Apache_2.0-blue.svg
-[license-url]: https://github.com/GroopFit/GroopFit-Web-App/blob/main/LICENSE
+[contributors-shield]: https://img.shields.io/badge/all_contributors-4-red.svg?style=flat-square
+[contributors-url]: https://github.com/sheldonej/Saratoga-Ladies-Website/graphs/contributors
+[license-shield]: https://img.shields.io/github/license/sheldonej/Saratoga-Ladies-Website.svg
+[license-url]: https://github.com/sheldonej/Saratoga-Ladies-Website/blob/main/LICENSE
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
