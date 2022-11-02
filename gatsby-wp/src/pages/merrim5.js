@@ -4,14 +4,15 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import "../components/matt_shapes.css"
-import { Q1, Q2, Q3, Q4, Component4} from "../components/matt_components"
+import { Q1, Q2, Q3, Q4, SiteComponent4} from "../components/matt_components"
 
 const MatthewsPage = () => (
   <Layout>
     
     <h1 style={{ textAlign: "center"}}>Matthew Merritt</h1>
       <div>
-        <Component4 image={"lightblue"}/>
+        {/* (TODO): Utilize prop to select image */}
+        <SiteComponent4 image={"example"}/>
       </div>
 
       <Q1 color={"lightblue"}/>

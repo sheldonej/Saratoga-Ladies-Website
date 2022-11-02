@@ -114,3 +114,8 @@
     overflow: hidden;
 }
 
+.flex-direction {
+    display: flex;
+    flex-direction: row;
+}
+
