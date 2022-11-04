@@ -8,15 +8,14 @@
 
 
 <!-- PROJECT LOGO -->
-<!--
 <br />
 <div align="center">
   <a href="">
-    <img src="" alt="Logo" width="80" height="80">
+    <img src="gatsby-wp\src\images\logo.png" alt="Logo" width="160" height="160">
   </a>
 
 </div>
--->
+
 
 
 <!-- TABLE OF CONTENTS -->
@@ -46,8 +45,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-The Saratoga Ladies Website is an open source site that ...
+Gerald B. H. Solomon Saratoga National Cemetery is a United States National Cemetery located in the village of Schuylerville in Saratoga County, New York. Administered by the United States Department of Veterans Affairs, it encompasses 351.7 acres, and as of 2021 had over 23,000 interments. The Saratoga Ladies Website is an initiative to get more women involved in the ceremonies of the cemetery. 
 
 ### Built With
 <!-- https://dev.to/envoy_/150-badges-for-github-pnk -->
@@ -127,7 +125,7 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/badge/all_contributors-4-red.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/badge/all_contributors-5-red.svg?style=flat-square
 [contributors-url]: https://github.com/sheldonej/Saratoga-Ladies-Website/graphs/contributors
 [license-shield]: https://img.shields.io/github/license/sheldonej/Saratoga-Ladies-Website.svg
 [license-url]: https://github.com/sheldonej/Saratoga-Ladies-Website/blob/main/LICENSE
