@@ -58,6 +58,7 @@ const ImagesArray = [
           <div className="banner-wrapper flex flow-col center filler-height-500 bg-blue">
             <img src={this.state.BannerSlides[this.state.currIndex].image} />
 
+           {/* 
             <div className="banner-selector-wrapper" >
               <div className="banner-selector-line" >
                 {this.state.BannerSlides.map((element, index) => {
@@ -71,16 +72,17 @@ const ImagesArray = [
                 <RI.RiArrowRightSFill fontSize={'3rem'} color="#fff" value={{cursor: 'pointer'}} onClick={() => this.decrementIndex()}   />
                 <RI.RiArrowLeftSFill fontSize={'3rem'} color="#fff" value={{cursor: 'pointer'}} onClick={() => this.incrementIndex()}   />
               </div>
-            </div>
+            </div>   
+            */}
             <div className="ribbon-wrapper">
               <div className="ribbon">
-                <svg viewBox="0 0 40 1"><path d="M0 0 Q 20 2.75, 40 0" /></svg>
+                <svg viewBox="0 0 40 2"><path d="M0 0 Q 20 2.75, 40 0" /></svg>
                 <strong className="ribbon-content"></strong>
-                <svg viewBox="0 0 40 1"><path d="M0 0 Q 20 2.75, 40 0" /></svg>
+                <svg viewBox="0 0 40 2"><path d="M0 0 Q 20 2.75, 40 0" /></svg>
               </div>
             </div>
-            <svg viewBox="0 0 40 1" fill="#fff"><path d={`M0 0 Q 20 2.75, 40 0`} /></svg>
-            <div className="banner-filler" onClick={() => this.decrementIndex()}/>
+            <svg viewBox="0 0 40 2" fill="#fff"><path d={`M0 0 Q 20 2.75, 40 0`} /></svg>
+            <div className="banner-filler"/>
           </div>        
         </React.Fragment>
 

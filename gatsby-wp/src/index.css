@@ -1,6 +1,7 @@
 :root {
-    --normal-header-height: 60px;
+    --normal-header-height: 40px;
     --normal-footer-height: auto;
+
     --primary-bg-color: #fff;
     --secondary-bg-color: #888;
 
@@ -90,7 +91,7 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color:  var(--secondary-bg-color);
+    background-color:  var(--primary-bg-color);
     position: fixed;
     top: 0px;
     z-index: 99999;
@@ -100,7 +101,9 @@ header {
     height: 100%;
     position: relative;
     z-index: 99999;
-
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-bg-color);
 }
 
 .header-wrapper svg {
@@ -111,7 +114,7 @@ header {
 
 
 .header-wrapper  svg path {
-    fill: var(--secondary-bg-color);
+    fill: var(--primary-bg-color);
     z-index: 99999;
 }
 
@@ -172,13 +175,15 @@ footer {
     bottom: 0px;
     position: absolute;
     background-color: #fff;
-
+    border: none;
+    display: block;
 }
 
 .banner-wrapper svg {
     position: absolute;
     transform: rotate(180deg);
-    bottom: 25px;
+    bottom: 24px;
+    width: 101%;
 }
 
 /*-------------------------------------------------------*/

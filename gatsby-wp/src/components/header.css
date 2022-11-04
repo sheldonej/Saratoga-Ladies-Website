@@ -1,37 +1,33 @@
 .container1{
     width: 22.5%;
-    height: 50%;
-    background-color: black;
+    height: 100%;
     text-align: center;
     justify-content: center;
+    background-color: inherit;
 }
 
 .container2{
     width: 22.5%;
-    height: 50%;
-    background-color: blue;
+    height: 100%;
     text-align: center;
     justify-content: center;
+    background-color: inherit;
 }
 
 .container3{
     width: 22.5%;
-    height: 50%;
-    background-color: orange;
+    height: 100%;
     text-align: center;
     justify-content: center;
+    background-color: inherit;
 }
 
 .dropcontainer{
     width: 22.5%;
-    height: 50%;
-    background-color: green;
+    height: 100%;
     text-align: center;
     justify-content: center;
-}
-
-.dropcontainer:hover{
-    background-color: darkgreen;
+    background-color: inherit;
 }
 
 .dropdown-content {
@@ -39,18 +35,25 @@
     height: 100%;
     position: relative;
     text-align: center;
-    background-color: green;
     top: 40%;
+    z-index: 100000;
+    background-color: inherit;
 }
 
-.imageContainer{
+.imageContainer {
     width: 10%;
-    height: 80%;
+    height: 100%;
+    justify-content: center;
+}
+
+.LogoHeaderImage {
+    width: 8rem;
+    height: 8rem;
     background-image: url("../images/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: wheat;
     justify-content: center;
     text-align: center;
+    border-radius: 50%;
 }
