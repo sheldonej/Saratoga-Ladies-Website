@@ -1,39 +1,10 @@
 import * as React from "react"
 import "../../index.css"
 import "../header.css"
+import HeaderData from "../../Constants.js"
 import { Link, navigate } from "gatsby"
 import { useState } from 'react'
 
-const HeaderData = [
-  {
-    title: "TITLE A",
-    path: "a",
-    icon: "a",
-    cName: "a"
-  },
-
-  {
-    title: "TITLE B",
-    path: "b",
-    icon: "b",
-    cName: "b"
-  },
-
-  {
-    title: "TITLE C",
-    path: "c",
-    icon: "c",
-    cName: "c"
-  },
-
-  {
-    title: "TITLE D",
-    path: "d",
-    icon: "d",
-    cName: "d"
-  }
-
-];
 
 function HeaderContent(){
     const [display, setDisplay] = useState( 'none' )
@@ -55,7 +26,9 @@ function HeaderContent(){
             <div className="container2">
             <Link to="/hadav">Vishal's Webpage</Link>
             </div>
-            <div className="imageContainer" onClick={()=>navigate('/')}/>
+            <div className="imageContainer" onClick={()=>navigate('/')}>
+              <div className="LogoHeaderImage"/>
+            </div>
             <div className="container3">
             <Link to="/merrim5">Matthew's Webpage</Link>
             </div>
