@@ -103,7 +103,7 @@ header {
     z-index: 99999;
     display: flex;
     align-items: center;
-
+    background-color: var(--primary-bg-color);
 }
 
 .header-wrapper svg {
