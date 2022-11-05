@@ -14,17 +14,11 @@ import "../header.css"
 function FooterComp(props) {
     return (
         <footer className="filler-height-200" style={
-            {display: "flex", flexDirection: "row", flexWrap: "wrap", backgroundColor: props.colorOne}}>
-              <div className="ColumnNoBorder" style={{ backgroundColor: props.colorOne}}>
-                </div>
-              <div className="Columns" style={{
-                backgroundColor: props.colorTwo,
-                }}>
-                </div>
-              <div className="Columns" style={{backgroundColor: props.colorOne }
-                }></div>
-              <div className="Bar" style={{            
-                }}></div>
+            {display: "flex", flexDirection: "row", flexWrap: "wrap"}}>
+              <div className="first_column"></div>
+              <div className="second_column"></div>
+              <div className="third_column"></div>
+              <div className="Bar"></div>
         </footer>
     );
 }

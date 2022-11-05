@@ -1,34 +1,93 @@
-.ColumnNoBorder{ 
-    width: 33.333%;
-    height: 200px;
-    background-color: #2565AE;
+.first_column{ 
+    width: 33.3333%;
+    height: 80px;
+    background-color: var(--secondary-bg-color);
     position: relative;
 }
-.Columns{
-    width: 33.333%;
-    height: 200px;
-    background-color: #2565AE;
+
+
+/*800 media query for phones  */
+
+.second_column{
+    width: 33.3333%;
+    height: 80px;
+    background-color: var(--secondary-bg-color);
     position: relative;
 }
-.Columns:after{
-   content: '';
-   border-left: 2px solid white;
-   position: absolute;
-   height: 70%;
-   left: 0;
-   top: 10%;
+
+.second_column:before{
+    content: '';
+    border-left: 1px solid var(--footer-line-color);
+    position: absolute;
+    height: calc(100%);
+    top: calc(var(--footer-spacing)/2);  
+    left: 0;
+}
+
+
+.second_column:after{
+    content: '';
+    border-left: 1px solid var(--footer-line-color);
+    position: absolute;
+    height: calc(100%);
+    top: calc(var(--footer-spacing)/2);
+    right: 0;
+}
+
+.third_column{
+   width: 33.3333%;
+   height: 80px;
+   background-color: var(--secondary-bg-color);
+   position: relative;
 }
 
 .Bar{
     width: 100%;
-    height: 50px; 
-    background-color: #2565AE; 
+    height: 30px; 
+    background-color: var(--secondary-bg-color); 
     position: relative;
 }
 .Bar:after{
     content: '';
-    border-top: 2px solid white;
+    border-top: 1px solid white;
     position: absolute;
-    width: 90%;
-    left: 5%;
+    width: calc(100% - var(--footer-spacing));
+    left: calc(var(--footer-spacing)/2) ;
+ }
+
+ @media only screen and (max-width: 1000px){
+    .first_column{
+        height: 40%;
+        width: 50%;
+    }
+
+    .second_column{
+        height: 40%;
+        width: 50%;
+    }
+
+    .second_column:after{
+        content: '';
+        border-left: 1px solid var(--footer-line-color);
+        position: absolute;
+        height: calc(100% - var(--footer-spacing));
+        top: calc(var(--footer-spacing)/2);
+    }
+    
+    .third_column{
+        height: 40%;
+        width: 100%;
+        position: relative;
+        border-left: none;
+    }
+    .third_column:after{
+        border-left: none;
+        content: '';
+        border-top: 1px solid var(--footer-line-color);
+        position: absolute;
+        width: calc(100% - var(--footer-spacing));
+        left: calc(var(--footer-spacing)/2) ;
+        top: 0;
+
+    }
  }
