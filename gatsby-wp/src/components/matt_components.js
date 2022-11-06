@@ -80,7 +80,7 @@ export function SiteComponent4(props) {
                 nisi ut aliquip ex ea commodo consequat.
 
             </p>
-            <DoubleCircles image={"example"} />
+            <DoubleCircles {...props} />
         </div>
     )
 

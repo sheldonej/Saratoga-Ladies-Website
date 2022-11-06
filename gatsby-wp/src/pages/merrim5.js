@@ -11,8 +11,26 @@ const MatthewsPage = () => (
     
     <h1 style={{ textAlign: "center"}}>Matthew Merritt</h1>
       <div>
-        {/* (TODO): Utilize prop to select image */}
-        <SiteComponent4 image={"example"}/>
+        {/* (TODO): Utilize prop to select image 
+
+        // TODO: Change class to className
+        
+
+        Size Props
+        * Notes: sizes for circles: s: small, m: medium, l: large
+        * perameters: circle1-size, circle2-size
+        * Reqiurements: The circle1-size is smaller than circle2-size
+        
+        Image Props
+        * circle1-image: 
+        * circle2-image:
+        * Reqiurements: destination must be to a valid file within the /images/ file
+        
+        */}
+
+        <SiteComponent4 circle1-size={"s"} circle2-size={"m"} circle1-image={"/"} circle2-image={"s"}/>
+
+        <img src={require("../images/example.png")} alt="example from site"/>
       </div>
 
       <Q1 color={"lightblue"}/>
