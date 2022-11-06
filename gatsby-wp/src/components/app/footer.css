@@ -1,16 +1,13 @@
 .first_column{ 
     width: 33.3333%;
-    height: 80px;
+    height: 80%;
     background-color: var(--secondary-bg-color);
     position: relative;
 }
 
-
-/*800 media query for phones  */
-
 .second_column{
     width: 33.3333%;
-    height: 80px;
+    height: 80%;
     background-color: var(--secondary-bg-color);
     position: relative;
 }
@@ -19,8 +16,8 @@
     content: '';
     border-left: 1px solid var(--footer-line-color);
     position: absolute;
-    height: calc(100%);
-    top: calc(var(--footer-spacing)/2);  
+    height: calc(100% - var(--footer-spacing));
+    top: calc(var(--footer-spacing)/2);
     left: 0;
 }
 
@@ -29,21 +26,21 @@
     content: '';
     border-left: 1px solid var(--footer-line-color);
     position: absolute;
-    height: calc(100%);
+    height: calc(100% - var(--footer-spacing));
     top: calc(var(--footer-spacing)/2);
     right: 0;
 }
 
 .third_column{
    width: 33.3333%;
-   height: 80px;
+   height: 80%;
    background-color: var(--secondary-bg-color);
    position: relative;
 }
 
 .Bar{
     width: 100%;
-    height: 30px; 
+    height: 20%; 
     background-color: var(--secondary-bg-color); 
     position: relative;
 }
@@ -55,7 +52,7 @@
     left: calc(var(--footer-spacing)/2) ;
  }
 
- @media only screen and (max-width: 1000px){
+ @media only screen and (max-width: 1450px){
     .first_column{
         height: 40%;
         width: 50%;
@@ -86,8 +83,35 @@
         border-top: 1px solid var(--footer-line-color);
         position: absolute;
         width: calc(100% - var(--footer-spacing));
+        left: calc(var(--footer-spacing)/2);
+        top: 0;
+    }
+ }
+
+ @media only screen and (max-width: 800px){
+    .first_column{
+        width: 100%;
+        height: 25%; 
+    }
+    .second_column{
+        width: 100%;
+        height: 25%;
+    }
+    .second_column:after{
+        border-left: none;
+        content: '';
+        border-top: 1px solid var(--footer-line-color);
+        position: absolute;
+        width: calc(100% - var(--footer-spacing));
         left: calc(var(--footer-spacing)/2) ;
         top: 0;
-
+    }
+    .third_column{
+        width: 100%;
+        height: 25%;
+    }
+    .Bar{
+        width: 100%;
+        height: 25%;
     }
  }
