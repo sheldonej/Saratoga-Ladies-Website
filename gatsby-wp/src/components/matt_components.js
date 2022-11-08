@@ -1,6 +1,8 @@
 import * as React from 'react'
 import "../components/matt_shapes.css"
 import example from "../images/example.png"
+import outerCircleImage from "../images/example.png"
+import innterCircleImage from "../images/example.png"
 
 
 
@@ -42,6 +44,8 @@ export function Q4(props) {
 // (TODO): use usestate(for functional components - set up logic based off of "s" "m" "l" for circles) 
 // that would adjust the size of the circles (from props input)
 // (TODO): add the new double circle into a larger component that uses "flex row (css) for styling"
+
+// make image hiehgt equals 100
 export function DoubleCircles(props) {
 
     return (
@@ -50,15 +54,15 @@ export function DoubleCircles(props) {
             {/* outer div*/}
             <div className="parent">
                 {/* outer circle */}
-                <div id="circle-large" class="overflow-hidden"> medium
-                    <img src={example} alt="outer circle image" />
+                <div id="circle-large" className="overflow-hidden">
+                    <img src={outerCircleImage} className="circle-image" alt="outer circle" />
 
 
                     {/* inner div */}
-                    <div className="child" src={example} alt="example">
+                    <div className="child">
                         {/* innter circle */}
-                        <div id="circle-medium" class="overflow-hidden">
-                            <img src={example} alt="outer circle image" />
+                        <div id="circle-medium" className="overflow-hidden">
+                            <img src={innterCircleImage} className="circle-image" alt="inner circle" />
 
                         </div>
                     </div>
