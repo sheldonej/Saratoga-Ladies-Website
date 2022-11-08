@@ -4,14 +4,33 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import "../components/matt_shapes.css"
-import { Q1, Q2, Q3, Q4, Component4} from "../components/matt_components"
+import { Q1, Q2, Q3, Q4, SiteComponent4} from "../components/matt_components"
 
 const MatthewsPage = () => (
   <Layout>
     
     <h1 style={{ textAlign: "center"}}>Matthew Merritt</h1>
       <div>
-        <Component4 image={"lightblue"}/>
+        {/* (TODO): Utilize prop to select image 
+
+        // TODO: Change class to className
+        
+
+        Size Props
+        * Notes: sizes for circles: s: small, m: medium, l: large
+        * perameters: circle1-size, circle2-size
+        * Reqiurements: The circle1-size is smaller than circle2-size
+        
+        Image Props
+        * circle1-image: 
+        * circle2-image:
+        * Reqiurements: destination must be to a valid file within the /images/ file
+        
+        */}
+
+        <SiteComponent4 circle1-size={"s"} circle2-size={"m"} circle1-image={"/"} circle2-image={"s"}/>
+
+        <img src={require("../images/example.png")} alt="example from site"/>
       </div>
 
       <Q1 color={"lightblue"}/>
