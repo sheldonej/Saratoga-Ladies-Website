@@ -4,7 +4,7 @@ import Seo from "../components/seo"
 import PageWrapper from "../components/app/PageWrapper"
 import SlideshowBanner from "../components/app/SlideshowBanner"
 import PageContentContainer from "../components/app/PageContentContainer"
-import Mission from "../components/app/Mission"
+import SectionOne from "../components/app/SectionOne"
 
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
@@ -17,10 +17,10 @@ const IndexPage = () => (
   <React.Fragment>
     <PageWrapper >
       <SlideshowBanner />
-      <PageContentContainer height={400} >
-        {/*  <Mission></Mission>  */}
+      <PageContentContainer height={'auto'} >
+        <SectionOne />
       </PageContentContainer> 
-      <Mission></Mission>
+    
       {/* THIS CODE ABOVE NEEDS TO BE IN THE THE PAGE CONTAINER COMPONENT AS FOLLOWS */}
       <PageContentContainer height={400} dropShadow> 2 </PageContentContainer> 
       <PageContentContainer height={400} > 3 </PageContentContainer> 
