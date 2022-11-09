@@ -1,16 +1,21 @@
 .container1,
 .container2,
 .container3{
+    display: flex;
     max-width: 22.5%;
     min-width: 22.5%;
+    height: 100%;
     text-align: center;
     justify-content: center;
+    align-items: end;
     background-color: inherit;
     z-index: 100000;
 }
 
 .dropcontainer {
-    display: inline-block;
+    display: flex;
+    height: 100%;
+    align-items: end;
     position: relative;
     max-width: 22.5%;
     min-width: 22.5%;
