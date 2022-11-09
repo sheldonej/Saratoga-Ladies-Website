@@ -152,7 +152,7 @@ header {
 .content-inner-wrapper {
     margin: 0px 25px;
     display: flex;
-    width: fit-content;
+    width: -webkit-fill-available;
     height: 100%;
 }
 

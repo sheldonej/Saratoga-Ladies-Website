@@ -16,9 +16,15 @@ function FooterComp(props) {
         <footer className="filler-height-200" style={
             {display: "flex", flexDirection: "row", flexWrap: "wrap"}}>
               <div className="first_column"></div>
-              <div className="second_column"></div>
+              <div className="second_column" style ={
+                {display:"flex", justifyContent: "center", alignItems: "center"}}>
+                    LOGO
+                </div>
               <div className="third_column"></div>
-              <div className="Bar"></div>
+              <div className="Bar" style ={
+                {display: "flex", justifyContent: "center"}}>
+                Copyright 2022 | An RCOS Project 
+              </div>
         </footer>
     );
 }

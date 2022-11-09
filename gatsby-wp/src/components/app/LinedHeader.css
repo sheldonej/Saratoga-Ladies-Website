@@ -1,0 +1,27 @@
+.section-header-lines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden;
+    color: #c23b22;
+  } 
+  
+  .section-header-lines:after,  .section-header-lines:before {
+    content: '';
+    width: 280px;
+    height: 6px;
+    background: var(--main-ribbon-color);
+    margin: 0 10px;
+    border-radius: 7px;
+    display:inline-block;
+    vertical-align:middle;
+    
+  }
+  
+  .section-header-text{
+   font-size: 30px;
+   width: max-content;
+  }
+  
