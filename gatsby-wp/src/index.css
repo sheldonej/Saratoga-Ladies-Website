@@ -17,6 +17,9 @@
 
     --saratoga-red: #c23b22;
     --saratoga-white: #fff;
+
+    --footer-spacing: 40px;
+    --footer-line-color: white; 
 }
 
 
@@ -103,7 +106,8 @@ header {
     z-index: 99999;
     display: flex;
     align-items: center;
-
+    justify-content: space-between;
+    background-color: var(--primary-bg-color);
 }
 
 .header-wrapper svg {

@@ -72,13 +72,13 @@
 .ColumnNoBorder{ 
     width: 33.333%;
     height: 200px;
-    background-color: red;
+    background-color: #2565AE;
     position: relative;
 }
 .Columns{
     width: 33.333%;
     height: 200px;
-    background-color: red;
+    background-color: #2565AE;
     position: relative;
 }
 .Columns:after{

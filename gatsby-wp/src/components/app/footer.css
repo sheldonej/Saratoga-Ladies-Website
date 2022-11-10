@@ -1,0 +1,117 @@
+.first_column{ 
+    width: 33.3333%;
+    height: 80%;
+    background-color: var(--secondary-bg-color);
+    position: relative;
+}
+
+.second_column{
+    width: 33.3333%;
+    height: 80%;
+    background-color: var(--secondary-bg-color);
+    position: relative;
+}
+
+.second_column:before{
+    content: '';
+    border-left: 1px solid var(--footer-line-color);
+    position: absolute;
+    height: calc(100% - var(--footer-spacing));
+    top: calc(var(--footer-spacing)/2);
+    left: 0;
+}
+
+
+.second_column:after{
+    content: '';
+    border-left: 1px solid var(--footer-line-color);
+    position: absolute;
+    height: calc(100% - var(--footer-spacing));
+    top: calc(var(--footer-spacing)/2);
+    right: 0;
+}
+
+.third_column{
+   width: 33.3333%;
+   height: 80%;
+   background-color: var(--secondary-bg-color);
+   position: relative;
+}
+
+.Bar{
+    width: 100%;
+    height: 20%; 
+    background-color: var(--secondary-bg-color); 
+    position: relative;
+}
+.Bar:after{
+    content: '';
+    border-top: 1px solid white;
+    position: absolute;
+    width: calc(100% - var(--footer-spacing));
+    left: calc(var(--footer-spacing)/2) ;
+ }
+
+ @media only screen and (max-width: 1450px){
+    .first_column{
+        height: 40%;
+        width: 50%;
+    }
+
+    .second_column{
+        height: 40%;
+        width: 50%;
+    }
+
+    .second_column:after{
+        content: '';
+        border-left: 1px solid var(--footer-line-color);
+        position: absolute;
+        height: calc(100% - var(--footer-spacing));
+        top: calc(var(--footer-spacing)/2);
+    }
+    
+    .third_column{
+        height: 40%;
+        width: 100%;
+        position: relative;
+        border-left: none;
+    }
+    .third_column:after{
+        border-left: none;
+        content: '';
+        border-top: 1px solid var(--footer-line-color);
+        position: absolute;
+        width: calc(100% - var(--footer-spacing));
+        left: calc(var(--footer-spacing)/2);
+        top: 0;
+    }
+ }
+
+ @media only screen and (max-width: 800px){
+    .first_column{
+        width: 100%;
+        height: 25%; 
+    }
+    .second_column{
+        width: 100%;
+        height: 25%;
+    }
+    .second_column:after{
+        border-left: none;
+        content: '';
+        border-top: 1px solid var(--footer-line-color);
+        position: absolute;
+        width: calc(100% - var(--footer-spacing));
+        left: calc(var(--footer-spacing)/2) ;
+        top: 0;
+    }
+    .third_column{
+        width: 100%;
+        height: 25%;
+    }
+    .Bar{
+        width: 100%;
+        height: 25%;
+    }
+ }
