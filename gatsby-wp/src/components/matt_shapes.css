@@ -76,23 +76,29 @@
 }
 
 /*Components used in site: */
-#circle-small {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    border:10px solid rgb(91, 147, 124);
-    border-radius: 50%;
+
+
+:root {
+    --circle-boarder: 12px solid rgb(91, 147, 124);
 }
 
 .circle-image {
     height: 100%;
 }
 
+#circle-small {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border: var(--circle-boarder);
+    border-radius: 50%;
+}
+
 #circle-medium {
     display: flex;
     width: 200px;
     height: 200px;
-    border:10px solid rgb(91, 147, 124);
+    border: var(--circle-boarder);
     border-radius: 50%;
 }
 
@@ -100,7 +106,7 @@
     display: flex;
     width: 300px;
     height: 300px;
-    border:10px solid rgb(91, 147, 124);
+    border: var(--circle-boarder);
     border-radius: 50%;
 }
 
@@ -122,4 +128,5 @@
     display: flex;
     flex-direction: row;
 }
+
 
