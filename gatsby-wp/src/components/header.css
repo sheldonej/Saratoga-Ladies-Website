@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 .container1,
 .container2,
 .container3{
@@ -43,20 +45,39 @@
     background-color: inherit;
 }
 
-.imageContainer {
+.imageContainer{
+    display: flex;
+    max-width: 22.5%;
+    min-width: 22.5%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    background-color: inherit;
+    align-items: end;
+    z-index: 100000;
+    font-family: 'Great Vibes', cursive;
+    font-size: 21px;
+    color: var(--saratoga-red);
+}
+
+
+/* .imageContainer {
     display: flex;
     position: relative;
     justify-content: center;
-    width: 300px;
+    text-align: center;
+    width: 100%;
     height: 100%;
     z-index: 100000;
+    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
 }
 
-.imageContainer img { /* CANNOT FIGURE OUT WIDTH > PARENT DIV | FIX SCALING WITH DIFFERENT SCREENS */
+.imageContainer img { /* CANNOT FIGURE OUT WIDTH > PARENT DIV | FIX SCALING WITH DIFFERENT SCREENS
     position: absolute;
-    width: 200vw;
-    height: 5vh;
-    top: 45%;
+    width: 150%;
+    height: 70px;
+    top: 50%;
     left: 0;
     right: 0;
-}
+} */
