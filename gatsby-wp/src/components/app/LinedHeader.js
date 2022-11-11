@@ -5,7 +5,7 @@ const LinedHeader = () => {
     return (
         <div className = "flex vertical-center " >
         <h2 className = "section-header-lines">
-            <div className="section-header-text">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </div>
+            <div className="section-header-text">Lorem ipsum dolor sit amet </div>
         </h2>
     </div>
     )

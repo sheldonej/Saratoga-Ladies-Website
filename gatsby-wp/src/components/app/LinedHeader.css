@@ -1,4 +1,6 @@
 .section-header-lines {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,10 +12,10 @@
   
   .section-header-lines:after,  .section-header-lines:before {
     content: '';
-    width: 280px;
-    height: 6px;
+    width: 200px;
+    height: 5px;
     background: var(--main-ribbon-color);
-    margin: 0 10px;
+    margin: 0 30px;
     border-radius: 7px;
     display:inline-block;
     vertical-align:middle;
@@ -21,7 +23,7 @@
   }
   
   .section-header-text{
-   font-size: 30px;
+   font-size: 45px;
    width: max-content;
   }
   

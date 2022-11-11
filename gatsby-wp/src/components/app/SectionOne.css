@@ -2,29 +2,30 @@
 
 
 .section-header{
+  width:100%;
   padding: 10px;
   height: fit-content;
   margin: 0 auto;
 }
 
 .section-header p{
+  font-family: 'Playfair Display', serif;
   font-size: 25px;
-  font-weight: 500;
-  color: var(--main-ribbon-color);;
+  color: var(--main-ribbon-color);
   margin-bottom: 20px;
- 
+ min-width: 90%;
   padding: 20px;
-    display: block;
+ 
    
 }
 
 
 #learn{
+  font-family: 'Playfair Display', serif;
   display: inline-block;
   padding:0.7em 1.7em;
   margin:0 0.3em 0.3em 0;
   border-radius: 30px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight:400;
   font-size: 25px;
   color:#FFFFFF;
