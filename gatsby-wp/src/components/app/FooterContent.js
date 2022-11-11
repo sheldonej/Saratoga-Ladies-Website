@@ -9,18 +9,34 @@ import * as React from "react"
 import "../../index.css"
 import "../app/footer.css"
 import "../header.css"
+import {Link, navigate} from "gatsby"
+import IMG from '../../images/SaratogaLadiesLogo.png'
 
 
 function FooterComp(props) {
     return (
         <footer className="filler-height-200" style={
             {display: "flex", flexDirection: "row", flexWrap: "wrap"}}>
-              <div className="first_column"></div>
+
+              <div className="first_column" style ={
+                {display: "flex"}}>
+                <img src={IMG} style={{objectFit: "contain"}}/>
+              </div>
+
+
               <div className="second_column" style ={
                 {display:"flex", justifyContent: "center", alignItems: "center"}}>
-                    LOGO
+                200 Duell Rd, Schuylerville, NY, 12871
                 </div>
-              <div className="third_column"></div>
+
+
+              <div className="third_column">
+              <div className="container1">
+                <Link to="/mappage">Site Map</Link>
+              </div>
+
+              </div>
+
               <div className="Bar" style ={
                 {display: "flex", justifyContent: "center"}}>
                 Copyright 2022 | An RCOS Project 
