@@ -37,12 +37,10 @@ function FooterComp(props) {
 
               </div>
 
-              <div className="Bar" style ={
-                {display: "flex", justifyContent: "center"}}>
-                Copyright 2022 | An RCOS Project 
+              <div className="Bar" style={{display: "flex"}}>
+              <div className="textBox"> CopyRight 2022 | An RCOS Project </div>
               </div>
         </footer>
     );
 }
-
 export default FooterComp;

@@ -47,12 +47,16 @@
 }
 .Bar:after{
     content: '';
-    border-top: 1px solid white;
+    border-top: 1px solid var(--footer-line-color);
     position: absolute;
     width: calc(100% - var(--footer-spacing));
     left: calc(var(--footer-spacing)/2) ;
  }
 
+ .textBox{
+    justify-content: center;
+    align-items: center;
+ }
 
  @media only screen and (max-width: 1000px){
     .first_column{
@@ -89,6 +93,8 @@
         top: 0;
     }
  }
+
+
 
  @media only screen and (max-width: 800px){
     .filler-height-200{
