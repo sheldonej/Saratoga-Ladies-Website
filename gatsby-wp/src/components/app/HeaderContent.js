@@ -4,7 +4,7 @@ import "../header.css"
 import HeaderData from "../../Constants.js"
 import { Link, navigate } from "gatsby"
 import { useState } from 'react'
-import IMG from '../../images/logo.png'
+import IMG from '../../images/SaratogaLadiesLogo.png'
 
 
 function HeaderContent(){
