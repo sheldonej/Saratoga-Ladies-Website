@@ -18,13 +18,13 @@ const MatthewsPage = () => (
 
         Size Props
         * Notes: sizes for circles: s: small, m: medium, l: large
-        * perameters: circle1-size, circle2-size
-        * Reqiurements: The circle1-size is smaller than circle2-size
+        * parameters: circle1-size, circle2-size
+        * requirements: The circle1-size is smaller than circle2-size
         
         Image Props
         * circle1-image: 
         * circle2-image:
-        * Reqiurements: destination must be to a valid file within the /images/ file
+        * requirements: destination must be to a valid file within the /images/ file
         
         */}
 
