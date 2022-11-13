@@ -1,0 +1,29 @@
+.section-header-lines {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden;
+    color: #c23b22;
+  } 
+  
+  .section-header-lines:after,  .section-header-lines:before {
+    content: '';
+    width: 200px;
+    height: 5px;
+    background: var(--main-ribbon-color);
+    margin: 0 30px;
+    border-radius: 7px;
+    display:inline-block;
+    vertical-align:middle;
+    
+  }
+  
+  .section-header-text{
+   font-size: 45px;
+   width: max-content;
+  }
+  

@@ -1,3 +1,4 @@
+
 .first_column{ 
     width: 33.3333%;
     height: 80%;
@@ -46,13 +47,32 @@
 }
 .Bar:after{
     content: '';
-    border-top: 1px solid white;
+    border-top: 1px solid var(--footer-line-color);
     position: absolute;
     width: calc(100% - var(--footer-spacing));
     left: calc(var(--footer-spacing)/2) ;
  }
 
- @media only screen and (max-width: 1450px){
+ .textBox{
+    justify-content: center;
+    margin: auto;
+ }
+
+ .menu-footer{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    font-size: x-small; 
+    margin: auto;
+ }
+
+ .menu-footer:visited{
+    text-decoration: none;
+    color:white;
+ }
+ 
+
+ @media only screen and (max-width: 1000px){
     .first_column{
         height: 40%;
         width: 50%;
@@ -88,14 +108,20 @@
     }
  }
 
+
+
  @media only screen and (max-width: 800px){
+    .filler-height-200{
+        min-height: 300px;
+        max-height: 300px;
+    }
     .first_column{
         width: 100%;
-        height: 25%; 
+        height: 30%; 
     }
     .second_column{
         width: 100%;
-        height: 25%;
+        height: 30%;
     }
     .second_column:after{
         border-left: none;
@@ -108,10 +134,11 @@
     }
     .third_column{
         width: 100%;
-        height: 25%;
+        height: 30%;
     }
     .Bar{
         width: 100%;
-        height: 25%;
+        height: 10%;
     }
+
  }

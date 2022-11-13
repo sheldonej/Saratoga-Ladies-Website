@@ -4,7 +4,7 @@ import "../header.css"
 import HeaderData from "../../Constants.js"
 import { Link, navigate } from "gatsby"
 import { useState } from 'react'
-import IMG from '../../images/logo.png'
+import IMG from '../../images/SaratogaLadiesLogo.png'
 
 
 function HeaderContent(){
@@ -28,7 +28,7 @@ function HeaderContent(){
                 <Link to="/hadav">Vishal's Webpage</Link>
             </div>
             <div className="imageContainer" onClick={()=>navigate('/')}>
-                <img src={IMG} />
+                The Saratoga Ladies
             </div>
             <div className="container3">
                 <Link to="/merrim5">Matthew's Webpage</Link>
