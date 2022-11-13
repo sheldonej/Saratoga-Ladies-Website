@@ -25,14 +25,21 @@ function FooterComp(props) {
 
 
               <div className="second_column" style ={
-                {display:"flex", justifyContent: "center", alignItems: "center"}}>
-                200 Duell Rd, Schuylerville, NY, 12871
+                {display:"flex", justifyContent: "center", margin: "auto"}}>
+                  <div className="textBox">
+                    Mission Statement: 
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?
+
+                  </div>
                 </div>
 
 
               <div className="third_column">
-              <div className="container1">
-                <Link to="/mappage">Site Map</Link>
+              <div className="textBox">
+                  <ul className="menu-footer">
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/blog">Blog</Link></li>
+                  </ul>
               </div>
 
               </div>
