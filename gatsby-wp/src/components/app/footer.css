@@ -55,7 +55,9 @@
 
  .textBox{
     justify-content: center;
-    align-items: center;
+    margin: auto;
+    top: 50%;
+    left: 50%;
  }
 
  @media only screen and (max-width: 1000px){

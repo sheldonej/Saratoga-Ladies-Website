@@ -11,7 +11,7 @@ import "../app/footer.css"
 import "../header.css"
 import {Link, navigate} from "gatsby"
 import IMG from '../../images/SaratogaLadiesLogo.png'
-
+import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
 
 function FooterComp(props) {
     return (
@@ -37,8 +37,9 @@ function FooterComp(props) {
 
               </div>
 
-              <div className="Bar" style={{display: "flex"}}>
-              <div className="textBox"> CopyRight 2022 | An RCOS Project </div>
+              <div className="Bar" style=
+              {{display: "flex", justifyContent: "center", margin: "auto"}}>
+              <div className="textBox"> CopyRight 2022 | <AiFillGithub /> | An RCOS Project </div>
               </div>
         </footer>
     );
