@@ -26,8 +26,8 @@ function FooterComp(props) {
 
 
               <div className="second_column" style ={
-                {display:"flex", justifyContent: "center", margin: "auto"}}>
-                  <div className="textBox">
+                {display:"flex"}}>
+                  <div className="textBox" style={{backgroundColor: "blue", height: "100%", width: "100%"}}>
                     Mission Statement: 
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?
 
@@ -35,18 +35,17 @@ function FooterComp(props) {
                 </div>
 
 
-              <div className="third_column">
-              <div className="textBox">
-                  <ul className="menu-footer">
+              <div className="third_column" style={{display: "flex"}}>
+                  <div className="menu-footer">
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/blog">Blog</Link></li>
-                  </ul>
-              </div>
+                    <li><Link to="/donations">Donations</Link></li>
+                  </div>
 
               </div>
 
               <div className="Bar" style=
-              {{display: "flex", justifyContent: "center", margin: "auto"}}>
+              {{display: "flex"}}>
               <div className="textBox"> CopyRight 2022 | <AiFillGithub /> | An RCOS Project </div>
               </div>
         </footer>
