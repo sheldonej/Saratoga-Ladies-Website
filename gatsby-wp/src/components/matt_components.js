@@ -1,7 +1,7 @@
 import * as React from 'react'
 import "../components/matt_shapes.css"
-import outerCircleImage from "../images/cemetery/8-IMG_3506.JPG"
-import innerCircleImage from "../images/cemetery/15-IMG_1002.JPG"
+import outerCircleImage from "../images/cemetery/IMG8.jpg"
+import innerCircleImage from "../images/cemetery/IMG15.jpg"
 
 
 

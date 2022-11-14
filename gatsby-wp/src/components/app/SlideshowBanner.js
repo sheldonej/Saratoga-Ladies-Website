@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as  RI from "react-icons/ri";
 import IMG1 from '../../images/cemetery/1c-IMG_9910.jpg'
-import IMG2 from '../../images/cemetery/7-IMG_9070.jpg'
+import IMG2 from '../../images/cemetery/IMG7.jpg'
 import IMG3 from '../../images/cemetery/14-20180205_122325_HDR.jpg'
 import IMG4 from '../../images/cemetery/13-IMG_8507.jpg'
 import IMG5 from '../../images/cemetery/12-IMG_867478.jpg'

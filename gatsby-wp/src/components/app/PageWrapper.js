@@ -32,13 +32,13 @@ function Footer(props) {
 
     render() {
       return (
-        <React.Fragment>
+        <>
           <div className="page-wrapper">
             <Header />
             { this.props.children }
           </div>
           <Footer/>
-        </React.Fragment>
+        </>
       )
     }
 }

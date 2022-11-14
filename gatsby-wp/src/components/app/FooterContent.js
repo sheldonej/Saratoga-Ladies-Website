@@ -11,9 +11,9 @@ import "../app/footer.css"
 import "../header.css"
 import {Link, navigate} from "gatsby"
 import IMG from '../../images/SaratogaLadiesLogo.png'
-//import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 
-let AiFillGithub = (<></>);
+//let AiFillGithub = (<></>);
 function FooterComp(props) {
     return (
         <footer className="filler-height-200" style={
