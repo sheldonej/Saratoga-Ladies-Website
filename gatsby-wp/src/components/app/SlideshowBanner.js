@@ -6,6 +6,10 @@ import IMG3 from '../../images/cemetery/14-20180205_122325_HDR.jpg'
 import IMG4 from '../../images/cemetery/13-IMG_8507.jpg'
 import IMG5 from '../../images/cemetery/12-IMG_867478.jpg'
 
+import { FaStar } from 'react-icons/fa'
+import {GiStarsStack} from 'react-icons/gi'
+
+
 
 const ImagesArray = [
   { image: IMG1, },
@@ -22,7 +26,7 @@ const ImagesArray = [
       super();
       this.state = {
         width: window.innerWidth/200,
-        currIndex: 0,
+        currIndex: 3,
         BannerSlides: [
           { image: IMG1, },
           { image: IMG2, },
@@ -76,12 +80,17 @@ const ImagesArray = [
             */}
             <div className="ribbon-wrapper">
               <div className="ribbon">
+               
                 <svg viewBox="0 0 40 2"><path d="M0 0 Q 20 2.75, 40 0" /></svg>
-                <strong className="ribbon-content"></strong>
+                <div className="ribbon-content">
+                  <GiStarsStack  fontSize="2.0em" />
+                  Hello Welcome to The World
+                  <GiStarsStack  fontSize="2.0em" />
+                </div>
                 <svg viewBox="0 0 40 2"><path d="M0 0 Q 20 2.75, 40 0" /></svg>
               </div>
             </div>
-            <svg viewBox="0 0 40 2" fill="#fff"><path d={`M0 0 Q 20 2.75, 40 0`} /></svg>
+            <svg viewBox="0 0 40 2" fill="#fff" style={{width: 'fit-content'}}><path d={`M0 0 Q 20 2.75, 40 0`} /></svg>
             <div className="banner-filler"/>
           </div>        
         </React.Fragment>

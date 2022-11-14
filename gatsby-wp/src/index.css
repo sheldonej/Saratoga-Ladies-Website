@@ -340,6 +340,32 @@ footer {
     margin: 0.75px;
    }
 
+   .ribbon-content svg {
+        position: relative !important;
+        width: fit-content !important;
+        color: #fff !important;
+        z-index: 9999 !important;
+   }
+
+   .ribbon-content svg path{ fill: #fff !important; }
+
+   .ribbon-content  svg:nth-of-type(1) {
+        position: absolute !important;
+        left: 15px !important;
+        top: 18px !important;
+        bottom: inherit !important;
+    }
+
+    .ribbon-content  svg:nth-of-type(2) {
+        position: absolute !important;
+        right: 15px !important;
+        left: inherit !important;
+        top: 18px !important;
+        bottom: inherit !important;
+    }
+    
+
+
    .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
     content: "";
     position: absolute;

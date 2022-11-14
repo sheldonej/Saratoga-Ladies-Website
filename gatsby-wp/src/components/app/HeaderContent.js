@@ -6,8 +6,7 @@ import { Link, navigate } from "gatsby"
 import { useState } from 'react'
 import IMG from '../../images/SaratogaLadiesLogo.png'
 
-
-function HeaderContent(){
+function HeaderContent(props){
     const [display, setDisplay] = useState( 'none' )
 
     function handleDropDownClick() {
