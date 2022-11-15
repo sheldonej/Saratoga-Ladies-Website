@@ -6,6 +6,8 @@ import { Link, navigate } from "gatsby"
 import { useState } from 'react'
 import IMG from '../../images/SaratogaLadiesLogo.png'
 
+//create onHover function for drop 
+
 function HeaderContent(props){
     const [display, setDisplay] = useState( 'none' )
 
@@ -20,19 +22,50 @@ function HeaderContent(props){
 
     return (
         <div className="header-wrapper">
-            <div className="container1">
-                <Link to="/rodria11">Adrian's Webpage</Link>
+             <div className="dropdown">
+                <div className="dropbtn">Dropdown</div>
+                <div className="dropdown-content">
+                    {HeaderData[0].map((item) => {
+                        return ( <div className="item">
+                            {item.title}
+                        </div> )
+                        })}
+                </div>
             </div>
-            <div className="container2">
-                <Link to="/hadav">Vishal's Webpage</Link>
+            <div className="dropdown">
+                <div className="dropbtn">Dropdown</div>
+                <div className="dropdown-content">
+                    {HeaderData[1].map((item) => {
+                        return ( <div className="item">
+                            {item.title}
+                        </div> )
+                        })}
+                </div>
             </div>
             <div className="imageContainer" onClick={()=>navigate('/')}>
                 The Saratoga Ladies
             </div>
-            <div className="container3">
-                <Link to="/merrim5">Matthew's Webpage</Link>
+            <div className="dropdown">
+                <div className="dropbtn">Dropdown</div>
+                <div className="dropdown-content">
+                    {HeaderData[2].map((item) => {
+                        return ( <div className="item">
+                            {item.title}
+                        </div> )
+                    })}
+                </div>
             </div>
-            <div className="dropcontainer" onClick={()=>handleDropDownClick()}>
+            <div className="dropdown">
+                <div className="dropbtn">Dropdown</div>
+                <div className="dropdown-content">
+                    {HeaderData[3].map((item) => {
+                        return ( <div className="item">
+                            {item.title}
+                        </div> )
+                    })}
+                </div>
+            </div>
+            {/* <div className="dropcontainer" onClick={()=>handleDropDownClick()}>
                 DROP CONTAINER
                 <div className="drop-content-container" style={{display: display}}>
                     {HeaderData.map((item) => {
@@ -41,7 +74,7 @@ function HeaderContent(props){
                         </div> )
                     })}
                 </div>
-            </div>
+            </div> */}
             <svg viewBox="0 0 40 2" fill="#fff"><path d={`M0 0 Q 20 2.75, 40 0`} /></svg>
         </div>
     )

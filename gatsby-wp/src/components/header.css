@@ -14,37 +14,49 @@
     z-index: 100000;
 }
 
-.dropcontainer {
-    display: flex;
-    height: 100%;
-    align-items: end;
-    position: relative;
-    max-width: 20%;
-    min-width: 20%;
+.dropbtn {
+    background-color: var(--saratoga-red);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
     text-align: center;
-    background-color: inherit;
+    align-items: end;
+    z-index: inherit;
 }
 
-.drop-content-container {
-    flex-direction: column;
-    width: 100%;
-    background-color: inherit;
-    position: absolute;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    text-align: center;
+.dropdown {
+    position: relative;
+    display: inline-block;
+    min-width: 20%;
+    max-width: 20%;
     z-index: 100000;
 }
 
 .dropdown-content {
+    display: none;
+    position: absolute;
     width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    border-color: black;
-    border: solid 1px;
-    text-align: center;
+    height: 100%;
+    background-color: white;
     z-index: 100000;
-    background-color: inherit;
-    justify-content: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
 }
+
+.item {
+    color:black;
+    background-color: inherit;
+    display: block;
+    height: 100%;
+    padding: 5%;
+}
+
+.dropdown-content .item:hover { background-color: #ddd; }
+
+.dropdown:hover .dropdown-content { display: block; }
+
+.dropdown:hover .dropbtn { background-color: var(--main-ribbon-color); }
 
 .imageContainer{
     display: flex;
