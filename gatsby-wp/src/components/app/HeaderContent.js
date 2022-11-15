@@ -1,7 +1,7 @@
 import * as React from "react"
 import "../../index.css"
 import "../header.css"
-import HeaderData from "../../Constants.js"
+import { HeaderData } from "../../Constants.js"
 import { Link, navigate } from "gatsby"
 import { useState } from 'react'
 import IMG from '../../images/SaratogaLadiesLogo.png'

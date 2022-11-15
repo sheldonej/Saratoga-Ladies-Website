@@ -12,6 +12,7 @@ import "../header.css"
 import {Link, navigate} from "gatsby"
 import IMG from '../../images/SaratogaLadiesLogo.png'
 import { AiFillGithub } from "react-icons/ai";
+import { FooterData } from "../../Constants.js"
 
 //let AiFillGithub = (<></>);
 function FooterComp(props) {
@@ -19,34 +20,37 @@ function FooterComp(props) {
         <footer className="filler-height-200" style={
             {display: "flex", flexDirection: "row", flexWrap: "wrap"}}>
 
-              <div className="first_column" style ={
-                {display: "flex"}}>
-                <img src={IMG} style={{objectFit: "contain"}}/>
+              <div className="first_column" style={{
+                display:"flex", justifyContent: "center"}}>
+                <button className="button"> Click to donate to the Saratoga Ladies</button>
               </div>
 
 
               <div className="second_column" style ={
-                {display:"flex"}}>
-                  <div className="textBox" style={{backgroundColor: "blue", height: "100%", width: "100%"}}>
-                    Mission Statement: 
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?
-
+                {display:"flex", flexWrap: "wrap"}}>
+                  <div className="mission-statement-title"> Mission Statement</div>
+                  <div className="text-box" style={{ height: "50%", width: "100%", fontSize: "xx-small"}}>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas.
                   </div>
                 </div>
 
 
-              <div className="third_column" style={{display: "flex"}}>
+              <div className="third_column" style={{display: "flex", alignItems: "center"}}>
                   <div className="menu-footer">
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/blog">Blog</Link></li>
-                    <li><Link to="/donations">Donations</Link></li>
+                  {FooterData.map((item) => {
+                        return ( 
+                            <li>
+                            <Link to={item.path} className="link-styles">{item.title}</Link>
+                            </li>
+                         )  
+                        })}
                   </div>
 
               </div>
 
               <div className="Bar" style=
               {{display: "flex"}}>
-              <div className="textBox"> CopyRight 2022 | <AiFillGithub /> | An RCOS Project </div>
+              <div className="text-box"> CopyRight 2022 | <AiFillGithub /> | An RCOS Project </div>
               </div>
         </footer>
     );
