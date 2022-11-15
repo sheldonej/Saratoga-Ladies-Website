@@ -32,7 +32,7 @@ function HeaderContent(props){
                         })}
                 </div>
             </div>
-            <div className="dropdown">
+            <div className="dropdown margin-top-35">
                 <div className="dropbtn">Dropdown</div>
                 <div className="dropdown-content">
                     {HeaderData[1].map((item) => {
@@ -45,7 +45,7 @@ function HeaderContent(props){
             <div className="imageContainer" onClick={()=>navigate('/')}>
                 The Saratoga Ladies
             </div>
-            <div className="dropdown">
+            <div className="dropdown margin-top-35">
                 <div className="dropbtn">Dropdown</div>
                 <div className="dropdown-content">
                     {HeaderData[2].map((item) => {
