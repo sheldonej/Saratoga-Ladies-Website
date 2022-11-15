@@ -1,0 +1,132 @@
+.quadrant1 {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+}
+
+.diamond {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    align-items: center;
+    justify-content: center; 
+    transform: rotate(45deg);
+}
+
+
+.quadrant2 {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center; 
+}
+
+.quadrant3 {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(227, 111, 130);
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.textbox {
+    display: flex;
+    width: 50px;
+    height: 100px;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quadrant4 {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+/*Components used in site: */
+
+
+:root {
+    --circle-boarder: 12px solid rgb(91, 147, 124);
+}
+
+.circle-image {
+    height: 100%;
+}
+
+#circle-small {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border: var(--circle-boarder);
+    border-radius: 50%;
+}
+
+#circle-medium {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border: var(--circle-boarder);
+    border-radius: 50%;
+}
+
+#circle-large {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border: var(--circle-boarder);
+    border-radius: 50%;
+}
+
+.parent {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.flex-direction {
+    display: flex;
+    flex-direction: row;
+}
+
+

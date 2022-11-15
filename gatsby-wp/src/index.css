@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Ubuntu:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&family=Rubik&family=Ubuntu:wght@400;500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Readex+Pro&family=Rubik&family=Ubuntu:wght@400;500&display=swap');
 :root {
-    --normal-header-height: 40px;
-    --normal-footer-height: auto;
 
     --primary-bg-color: #fff;
     --secondary-bg-color: #888;
@@ -17,11 +18,27 @@
     --third-ribbon-color: #0041C2;
 
 
-    --saratoga-red: #c23b22;
-    --saratoga-white: #fff;
+
 
     --footer-spacing: 40px;
     --footer-line-color: white; 
+
+    /*-----------------------------------------*/
+    /*     Finalized Root Variables Below      */
+    /*-----------------------------------------*/
+    --normal-header-height: 40px;
+    --normal-footer-height: auto;
+
+    --saratoga-red: #c23b22;
+    --saratoga-white: #ffffff;
+    --saratoga-blue: #355cd2;
+    --saratoga-black: #0c0c0c;
+
+    --saratoga-larger-text: 30px;
+    --saratoga-large-text: 24px;
+    --saratoga-medium-text: 20px;
+    --saratoga-small-text: 18px;
+    --saratoga-smaller-text: 16px;
 }
 
 
@@ -33,9 +50,7 @@ THIRD:
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
+    font-family: 'Readex Pro', sans-serif !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -43,6 +58,38 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+/*-----------------------------------------------------*/
+/*          New CSS STARTS BELOW THIS BOX              */
+/*-----------------------------------------------------*/
+.saratoga-flex { display: flex; }
+
+.saratoga-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.saratoga-one-third-container,
+.saratoga-half-container,
+.saratoga-two-third-container,
+.saratoga-full-container  {
+  height: auto;
+  display: flex;
+}
+
+.saratoga-one-third-container { width: 33.3333%; }
+.saratoga-half-container { width: 50%; }
+.saratoga-two-third-container { width: 66.6667%; }
+.saratoga-full-container { width: -webkit-fill-available; }
+
+
+/*-----------------------------------------------------*/
+/*           NEW CSS ENDS BELOW AT THIS BOX            */
+/*-----------------------------------------------------*/
+
+
+
+
 
 .flex { display: flex; } 
 .vertical-center { justify-content: center; }
@@ -101,6 +148,7 @@ header {
     top: 0px;
     z-index: 99999;
 }
+
 .header-wrapper {
     width: 100%;
     height: 100%;
@@ -112,10 +160,19 @@ header {
     background-color: var(--primary-bg-color);
 }
 
+.header-wrapper div:nth-of-type(2){
+    margin-top: 25px;
+}
+
+.header-wrapper div:nth-of-type(4){
+    margin-top: 25px;
+}
+
 .header-wrapper svg {
     position: fixed;
     top: calc(var(--normal-header-height));
     z-index: 99999;
+    filter: drop-shadow(0px 4px 2px rgb(0 0 0 / 0.15));
 }
 
 
@@ -289,6 +346,7 @@ footer {
     width: 100%;
     z-index: 999;
 }
+
 .ribbon {
     font-size: 20px !important;
     /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
@@ -322,6 +380,20 @@ footer {
   
     /*border: 1.55em solid #123456;*/
     z-index: -9;
+   }
+
+   .ribbon-content {
+    display: flex;
+    justify-content: center;
+   }
+
+   .ribbon-text {
+        font-size: 28px;
+        position: absolute;
+        z-index: 999;
+        top: -14px;
+        margin: 0 auto;
+        margin-bottom: 20px;
    }
 
    .ribbon:before {

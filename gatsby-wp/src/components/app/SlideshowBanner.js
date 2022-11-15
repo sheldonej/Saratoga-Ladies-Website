@@ -1,10 +1,12 @@
 import * as React from "react"
+//import CircleType from `circletype`;
 import * as  RI from "react-icons/ri";
 import IMG1 from '../../images/cemetery/1c-IMG_9910.jpg'
 import IMG2 from '../../images/cemetery/IMG7.jpg'
 import IMG3 from '../../images/cemetery/14-20180205_122325_HDR.jpg'
 import IMG4 from '../../images/cemetery/13-IMG_8507.jpg'
-import IMG5 from '../../images/cemetery/12-IMG_867478.jpg'
+import IMG5 from '../../images/cemetery/IMG7.jpg'
+import CircleType from 'circletype';
 
 import { FaStar } from 'react-icons/fa'
 import {GiStarsStack} from 'react-icons/gi'
@@ -26,7 +28,7 @@ const ImagesArray = [
       super();
       this.state = {
         width: window.innerWidth/200,
-        currIndex: 3,
+        currIndex: 0,
         BannerSlides: [
           { image: IMG1, },
           { image: IMG2, },
@@ -36,6 +38,12 @@ const ImagesArray = [
         ],
       }
       
+    }
+
+    componentDidMount(){
+      console.log("Hello World")
+      const circleType = new CircleType(document.getElementById('ribbonText'));
+      circleType.radius(3600);
     }
 
     componentDidUpdate(){
@@ -84,7 +92,9 @@ const ImagesArray = [
                 <svg viewBox="0 0 40 2"><path d="M0 0 Q 20 2.75, 40 0" /></svg>
                 <div className="ribbon-content">
                   <GiStarsStack  fontSize="2.0em" />
-                  Hello Welcome to The World
+                  <div className="ribbon-text" id='ribbonText' >
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit
+                  </div>
                   <GiStarsStack  fontSize="2.0em" />
                 </div>
                 <svg viewBox="0 0 40 2"><path d="M0 0 Q 20 2.75, 40 0" /></svg>
