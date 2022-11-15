@@ -1,6 +1,11 @@
 /* In the footer, we will be entering the colors of each component, eventually
       I am also going to want to get rid of the borders except for the middle one which will have distance between
       components (10px for large screen). Four components in total. 
+      
+      Style components
+      convert everything to style components
+      clean up all the divs and put it into depricated
+      update on local host:8000 then update it to 
 */
     
 import * as React from "react"
