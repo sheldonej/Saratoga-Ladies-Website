@@ -65,16 +65,6 @@ function HeaderContent(props){
                     })}
                 </div>
             </div>
-            {/* <div className="dropcontainer" onClick={()=>handleDropDownClick()}>
-                DROP CONTAINER
-                <div className="drop-content-container" style={{display: display}}>
-                    {HeaderData.map((item) => {
-                        return ( <div className="dropdown-content">
-                        {item.title}
-                        </div> )
-                    })}
-                </div>
-            </div> */}
             <svg viewBox="0 0 40 2" fill="#fff"><path d={`M0 0 Q 20 2.75, 40 0`} /></svg>
         </div>
     )
