@@ -1,49 +1,60 @@
 import * as React from "react"
 import "../../index.css"
-import "../header.css"
 import { HeaderData } from "../../Constants.js"
 import { Link, navigate } from "gatsby"
 import { useState } from 'react'
-import IMG from '../../images/SaratogaLadiesLogo.png'
+import {MarginTop35, DropBtn, Dropdown, DropdownContent, HeaderWrapper, ImageContainer, Item } from './Elements'
+
+//create onHover function for drop 
 
 function HeaderContent(props){
-    const [display, setDisplay] = useState( 'none' )
-
-    function handleDropDownClick() {
-        if (display == 'none'){
-            setDisplay( 'flex' )
-        }
-        else {
-            setDisplay( 'none' )
-        }
-    }
-
     return (
-        <div className="header-wrapper">
-            <div className="container1">
-                <Link to="/rodria11">Adrian's Webpage</Link>
-            </div>
-            <div className="container2">
-                <Link to="/hadav">Vishal's Webpage</Link>
-            </div>
-            <div className="imageContainer" onClick={()=>navigate('/')}>
+        <HeaderWrapper>
+            <Dropdown>
+                <DropBtn>Dropdown</DropBtn>
+                <DropdownContent>
+                    {HeaderData[0].map((item) => {
+                        return ( <Item>
+                            {item.title}
+                        </Item> )
+                        })}
+                </DropdownContent>
+            </Dropdown>
+            <Dropdown style={{marginTop: "35px"}}>
+                <DropBtn>Dropdown</DropBtn>
+                <DropdownContent>
+                    {HeaderData[1].map((item) => {
+                        return ( <Item>
+                            {item.title}
+                        </Item> )
+                        })}
+                </DropdownContent>
+            </Dropdown>
+            <ImageContainer onClick={()=>navigate('/')}>
                 The Saratoga Ladies
-            </div>
-            <div className="container3">
-                <Link to="/merrim5">Matthew's Webpage</Link>
-            </div>
-            <div className="dropcontainer" onClick={()=>handleDropDownClick()}>
-                DROP CONTAINER
-                <div className="drop-content-container" style={{display: display}}>
-                    {HeaderData.map((item) => {
-                        return ( <div className="dropdown-content">
-                        {item.title}
-                        </div> )
-                    })}
-                </div>
-            </div>
+            </ImageContainer>
+            <Dropdown style={{marginTop: "35px"}}>
+                <DropBtn>Dropdown</DropBtn>
+                <DropdownContent>
+                    {HeaderData[2].map((item) => {
+                        return ( <Item>
+                            {item.title}
+                        </Item> )
+                        })}
+                </DropdownContent>
+            </Dropdown>
+            <Dropdown>
+                <DropBtn>Dropdown</DropBtn>
+                <DropdownContent>
+                    {HeaderData[3].map((item) => {
+                        return ( <Item>
+                            {item.title}
+                        </Item> )
+                        })}
+                </DropdownContent>
+            </Dropdown>
             <svg viewBox="0 0 40 2" fill="#fff"><path d={`M0 0 Q 20 2.75, 40 0`} /></svg>
-        </div>
+        </HeaderWrapper>
     )
 }
 
