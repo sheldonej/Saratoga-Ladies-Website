@@ -1,5 +1,4 @@
 import * as React from 'react'
-import "../components/jose_shapes.css"
 
 export function Q1(props) {
     return (

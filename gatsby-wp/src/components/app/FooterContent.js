@@ -15,6 +15,7 @@ import "../header.css"
 import {Link} from "gatsby"
 import { AiFillGithub } from "react-icons/ai";
 import { FooterData } from "../../Constants.js"
+import { FirstColumn } from "../../components/Footer/Elements.js"
 
 
 function FooterComp(props) {
