@@ -30,7 +30,7 @@ function HeaderContent(props){
                         })}
                 </DropdownContent>
             </Dropdown>
-            <ImageContainer onClick={()=>navigate('/')}>
+            <ImageContainer onClick={()=>navigate('/home')}>
                 The Saratoga Ladies
             </ImageContainer>
             <Dropdown style={{marginTop: "35px"}}>

@@ -9,7 +9,22 @@ export const HeaderWrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     background-color: var(--primary-bg-color);
+
+    & svg {
+        position: fixed;
+        top: calc(var(--normal-header-height));
+        z-index: 99999;
+        filter: drop-shadow(0px 4px 2px rgb(0 0 0 / 0.15));
+        width: 100%;
+    }
+
+    & svg path {
+        fill: var(--primary-bg-color);
+        z-index: 99999;
+    }
 `
+
+
 
 export const Item = styled.div`
     color:black;
@@ -17,6 +32,7 @@ export const Item = styled.div`
     display: block;
     height: 100%;
     padding: 5%;
+    cursor: pointer;
 `
 
 export const DropdownContent = styled.div`
@@ -28,6 +44,7 @@ export const DropdownContent = styled.div`
     z-index: 100000;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     text-align: center;
+    cursor: pointer;
 
     & ${Item}:hover {
         background-color: #ddd;
@@ -40,18 +57,16 @@ export const Dropdown = styled.div`
     min-width: 20%;
     max-width: 20%;
     z-index: 100000;
+    cursor: pointer;
 
     &:hover ${DropdownContent} {
         display: block;
     }
 
-    &:hover ${DropBtn} {
-        background-color: var(--main-ribbon-color);
-    }
 `
 
 export const DropBtn = styled.div`
-    background-color: white;
+    background-color: rgba(0,0,0,0);
     color: var(--saratoga-red);
     padding: 16px;
     font-size: 16px;
@@ -59,6 +74,11 @@ export const DropBtn = styled.div`
     text-align: center;
     align-items: end;
     z-index: inherit;
+    cursor: pointer;
+
+    &:hover {
+        background-color: white;
+    }
 `
 export const ImageContainer = styled.div`
     display: flex;
@@ -75,4 +95,5 @@ export const ImageContainer = styled.div`
     font-size: 40px !important;
     color: var(--saratoga-red);
     padding-right: 20px;
+    cursor: pointer;
 `
