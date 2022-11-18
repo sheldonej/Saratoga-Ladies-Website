@@ -13,8 +13,7 @@ export const TitleLines = styled.div`
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    text-align: center;
-    overflow: hidden;
+    text-align: center;    overflow: hidden;
     color: #c23b22;
 
     &:after, 
