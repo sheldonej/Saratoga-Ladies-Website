@@ -1,5 +1,4 @@
 import * as React from "react"
-import "./SectionOne.css"
 import {} from './SectionElements' 
 import LinedHeader from "../../LinedHeader/index.jsx"
 import {ContentContainer, TextSection, Text, ButtonSection, LearnButton} from './SectionElements'
