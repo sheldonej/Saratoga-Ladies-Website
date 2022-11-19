@@ -87,13 +87,28 @@ export const ImageContainer = styled.div`
     height: 100%;
     text-align: center;
     justify-content: center;
-    background-color: inherit;
+    background-color: rgba(0,0,0,0);
     align-items: end;
     z-index: 100000;
     font-family: 'Great Vibes', cursive;
-    margin-top: 70px;
-    font-size: 40px !important;
+    margin-top: 10vh;
+    font-size: 2.5vw !important;
     color: var(--saratoga-red);
     padding-right: 20px;
     cursor: pointer;
+
+    /* @media screen and (min-width: 1400px) {
+        & {
+            font-size: 35px !important;
+            margin-top: 50px;
+        }
+    }
+    
+    /* IPad Air as reference */
+    @media screen and (max-width: 900px) {
+        & {
+            font-size: 22px !important;
+            margin-top: 33px;
+        }
+    } */
 `
