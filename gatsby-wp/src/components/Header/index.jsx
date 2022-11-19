@@ -7,52 +7,35 @@ import {MarginTop35, DropBtn, Dropdown, DropdownContent, HeaderWrapper, ImageCon
 
 //create onHover function for drop 
 
+function MappedDropDown(props){
+    return (<Dropdown style={{marginTop: props.mrgnTop}}>
+                <DropBtn>{props.hero}</DropBtn>
+                <DropdownContent>
+                    {HeaderData[props.index].map((item) => {
+                        return ( <Item onClick={()=>navigate(item.path)}>
+                            {item.title}
+                        </Item> )
+                        })}
+                </DropdownContent>
+            </Dropdown>
+    )
+}
+
 function HeaderContent(props){
     return (
         <HeaderWrapper>
-            <Dropdown>
-                <DropBtn>Dropdown</DropBtn>
-                <DropdownContent>
-                    {HeaderData[0].map((item) => {
-                        return ( <Item>
-                            {item.title}
-                        </Item> )
-                        })}
-                </DropdownContent>
-            </Dropdown>
-            <Dropdown style={{marginTop: "35px"}}>
-                <DropBtn>Dropdown</DropBtn>
-                <DropdownContent>
-                    {HeaderData[1].map((item) => {
-                        return ( <Item>
-                            {item.title}
-                        </Item> )
-                        })}
-                </DropdownContent>
-            </Dropdown>
+            <MappedDropDown mrgnTop="0px" hero="Join Now!" index="0"/>
+
+            <MappedDropDown mrgnTop="35px" hero="Community" index="1"/>
+
             <ImageContainer onClick={()=>navigate('/home')}>
                 The Saratoga Ladies
             </ImageContainer>
-            <Dropdown style={{marginTop: "35px"}}>
-                <DropBtn>Dropdown</DropBtn>
-                <DropdownContent>
-                    {HeaderData[2].map((item) => {
-                        return ( <Item>
-                            {item.title}
-                        </Item> )
-                        })}
-                </DropdownContent>
-            </Dropdown>
-            <Dropdown>
-                <DropBtn>Dropdown</DropBtn>
-                <DropdownContent>
-                    {HeaderData[3].map((item) => {
-                        return ( <Item>
-                            {item.title}
-                        </Item> )
-                        })}
-                </DropdownContent>
-            </Dropdown>
+
+            <MappedDropDown mrgnTop="35px" hero="Meet the Ladies" index="2"/>
+
+            <MappedDropDown mrgnTop="0px" hero="About" index="3"/>
+
             <svg viewBox="0 0 40 2" fill="#fff"><path d={`M0 0 Q 20 2.75, 40 0`} /></svg>
         </HeaderWrapper>
     )

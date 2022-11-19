@@ -35,6 +35,22 @@ export const Item = styled.div`
     cursor: pointer;
 `
 
+export const DropBtn = styled.div`
+    background-color: rgba(0,0,0,0);
+    color: var(--saratoga-red);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    align-items: end;
+    z-index: inherit;
+    cursor: pointer;
+
+    &:hover {
+        background-color: white;
+    }
+`
+
 export const DropdownContent = styled.div`
     display: none;
     position: absolute;
@@ -63,22 +79,10 @@ export const Dropdown = styled.div`
         display: block;
     }
 
-`
-
-export const DropBtn = styled.div`
-    background-color: rgba(0,0,0,0);
-    color: var(--saratoga-red);
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    text-align: center;
-    align-items: end;
-    z-index: inherit;
-    cursor: pointer;
-
-    &:hover {
+    &:hover ${DropBtn} {
         background-color: white;
     }
+
 `
 export const ImageContainer = styled.div`
     display: flex;

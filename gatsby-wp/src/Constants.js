@@ -4,28 +4,28 @@ export const HeaderData = [
   [
     {
       title: "TITLE A",
-      path: "a",
+      path: "/titleA",
       icon: "a",
       cName: "a"
     },
   
     {
       title: "TITLE B",
-      path: "b",
+      path: "/titleB",
       icon: "b",
       cName: "b"
     },
   
     {
       title: "TITLE C",
-      path: "c",
+      path: "/titleC",
       icon: "c",
       cName: "c"
     },
   
     {
       title: "TITLE D",
-      path: "d",
+      path: "/titleD",
       icon: "d",
       cName: "d"
     }
@@ -35,14 +35,14 @@ export const HeaderData = [
   [
     {
       title: "GREEN",
-      path: "a",
+      path: "/green",
       icon: "a",
       cName: "a"
     },
   
     {
       title: "BLUE",
-      path: "b",
+      path: "/blue",
       icon: "b",
       cName: "b"
     }
@@ -52,42 +52,42 @@ export const HeaderData = [
   [
     {
       title: "ADRIAN",
-      path: "a",
+      path: "/adrian",
       icon: "a",
       cName: "a"
     },
   
     {
       title: "VISHAL",
-      path: "b",
+      path: "/vishal",
       icon: "b",
       cName: "b"
     },
   
     {
       title: "MATTHEW",
-      path: "c",
+      path: "/matthew",
       icon: "c",
       cName: "c"
     },
   
     {
       title: "JOSE",
-      path: "d",
+      path: "/jose",
       icon: "d",
       cName: "d"
     },
 
     {
       title: "FELIX",
-      path: "d",
+      path: "/felix",
       icon: "d",
       cName: "d"
     },
 
     {
       title: "SHELDON",
-      path: "d",
+      path: "/sheldon",
       icon: "d",
       cName: "d"
     }
@@ -97,7 +97,7 @@ export const HeaderData = [
   [
     {
       title: "solo element with long text blah blah blah hello world i guess",
-      path: "a",
+      path: "/a",
       icon: "a",
       cName: "a"
     },
