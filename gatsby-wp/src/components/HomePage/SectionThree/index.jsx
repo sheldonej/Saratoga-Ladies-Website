@@ -18,7 +18,7 @@ const SectionThree = () => {
                 </SectionWrapper>   
             </SectionTwoThirdContainer>
             <SectionOneThirdContainer>
-                <DoubleCircle circle1-size={"s"} circle2-size={"m"} circle1-image={"/"} circle2-image={"s"}/>
+                <DoubleCircle circle1-size={"s"} circle2-size={"m"}/>
             </SectionOneThirdContainer>
         </ContentContainer>
     )

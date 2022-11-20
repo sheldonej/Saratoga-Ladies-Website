@@ -79,7 +79,7 @@
 
 
 :root {
-    --circle-boarder: 12px solid rgb(91, 147, 124);
+    --circle-boarder: 14px solid #355cd2;
 }
 
 .circle-image {

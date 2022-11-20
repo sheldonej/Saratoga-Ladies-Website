@@ -1,5 +1,5 @@
 import * as React from 'react'
-import "../components/matt_shapes.css"
+import "../components/DoubleCircle/matt_shapes.css"
 import outerCircleImage from "../images/cemetery/IMG8.jpg"
 import innerCircleImage from "../images/cemetery/IMG15.jpg"
 
