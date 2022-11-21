@@ -79,14 +79,15 @@
 
 
 :root {
-    --circle-boarder: 12px solid rgb(91, 147, 124);
+    --circle-boarder: 14px solid #355cd2;
 }
 
 .circle-image {
     height: 100%;
+
 }
 
-#circle-small {
+#circle-s {
     display: flex;
     width: 100px;
     height: 100px;
@@ -94,7 +95,7 @@
     border-radius: 50%;
 }
 
-#circle-medium {
+#circle-m {
     display: flex;
     width: 200px;
     height: 200px;
@@ -102,7 +103,7 @@
     border-radius: 50%;
 }
 
-#circle-large {
+#circle-l {
     display: flex;
     width: 300px;
     height: 300px;

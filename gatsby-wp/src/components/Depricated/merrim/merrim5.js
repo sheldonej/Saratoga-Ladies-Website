@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "../../layout"
+import Seo from "../../seo"
 import "../components/matt_shapes.css"
 import { Q1, Q2, Q3, Q4, SiteComponent4} from "../components/matt_components"
 
