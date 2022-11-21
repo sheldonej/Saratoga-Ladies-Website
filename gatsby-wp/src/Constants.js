@@ -106,11 +106,10 @@ export const HeaderData = [
 ];
 
 export const FooterData = [
-  {
-    title: "Jose",
-    path: "/jose_shapes"
-  },
-  
+    {
+      title: "Jose",
+      path: "/jose_shapes"
+    },
   {
     title: "Blog",
     path: "a"
@@ -121,10 +120,3 @@ export const FooterData = [
     path: "a"
   }
 ];
-
-export const FooterData2 = [
-  {
-    title: "Blog",
-    path: "a"
-  }
-]

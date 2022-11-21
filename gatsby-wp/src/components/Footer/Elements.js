@@ -145,7 +145,7 @@ export const Bar = styled.div`
 
 export const MissionStatementTitle=styled.div`
     width: 100%;
-    height: 20%;
+    height: 30%;
     @media only screen and (max-width: 1000px) {
         & {
             text-align: center;
@@ -204,6 +204,9 @@ export const LinkTitle=styled.div`
 `;
 
 export const TextBox = styled.div`
+    height: 70%;
+    width: 50%; 
+    font-size: .5em;
     justify-content: center;
     margin: auto;
     text-align: center;
@@ -219,16 +222,20 @@ export const BarTextBox = styled.div`
 
 export const MenuFooter = styled.div`
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: left;
     width: 100%;
-    height: 100%;
-    font-size: x-small; 
+    height: 70%;
+    font-size: small; 
 
     &:visited {
         text-decoration: none;
         color:white;
-     }
+    }
+
+    @media only screen and (max-width: 800px){
+        font-size: xx-small;
+    }
 `
 
 export const Button = styled.button`
@@ -281,5 +288,5 @@ export const LinkStyles = styled.link`
 
 export const ListFormat = styled.ul`
     list-style-type: none;
-    margin-bottom: 12px;
+    margin: 0px;
 `

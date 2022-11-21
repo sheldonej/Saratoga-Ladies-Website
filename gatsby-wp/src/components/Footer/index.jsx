@@ -19,8 +19,9 @@ function FooterComp(props) {
   return (
       <footer className="filler-height-200" style={
           {display: "flex", flexDirection: "row", flexWrap: "wrap"}}>
+
             <FirstColumn>
-              <DonationTitle>Donations</DonationTitle>
+              <DonationTitle> Donations </DonationTitle>
               <Button>
                 Click to donate to the Saratoga Ladies
               </Button>
@@ -28,8 +29,8 @@ function FooterComp(props) {
 
 
             <SecondColumn>
-                <MissionStatementTitle style ={{height: "30%"}}> Mission Statement</MissionStatementTitle>
-                  <TextBox style={{ height: "70%", width: "50%", fontSize: ".5em"}}>
+                <MissionStatementTitle> Mission Statement</MissionStatementTitle>
+                  <TextBox>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas.
                 </TextBox>
             </SecondColumn>
@@ -38,15 +39,14 @@ function FooterComp(props) {
             <ThirdColumn>
             <LinkTitle>Links</LinkTitle>
                 <MenuFooter>
-                {FooterData.map((item) => {
-                      return ( 
-                        <ListFormat>     
-                          <Link to={item.path} className="link-styles">
-                            <li> {item.title} </li>
-                          </Link>
-                        </ListFormat>
+                  <ListFormat>
+                  {FooterData.map((item) =>
+                          <li> 
+                            <Link to={item.path} className="link-styles"> {item.title}</Link>
+                          </li>
                        )  
-                      })}
+                  }
+                  </ListFormat>
                 </MenuFooter>
             </ThirdColumn>
 
