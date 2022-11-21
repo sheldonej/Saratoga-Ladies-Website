@@ -13,14 +13,14 @@ import {Link, navigate} from "gatsby"
 import IMG from '../../images/SaratogaLadiesLogo.png'
 import { AiFillGithub } from "react-icons/ai";
 import { FooterData } from "../../Constants.js"
-import { FirstColumn, SecondColumn, ThirdColumn, Bar, Button, TextBox, MenuFooter, MissionStatementTitle, ListFormat, LinkStyles } from "./Elements.js"
+import { FirstColumn, SecondColumn, ThirdColumn, Bar, Button, TextBox, BarTextBox, MenuFooter, MissionStatementTitle, ListFormat, DonationTitle, LinkTitle, LinkStyles } from "./Elements.js"
 
 function FooterComp(props) {
   return (
       <footer className="filler-height-200" style={
           {display: "flex", flexDirection: "row", flexWrap: "wrap"}}>
-
             <FirstColumn>
+              <DonationTitle>Donations</DonationTitle>
               <Button>
                 Click to donate to the Saratoga Ladies
               </Button>
@@ -36,10 +36,11 @@ function FooterComp(props) {
 
 
             <ThirdColumn>
+            <LinkTitle>Links</LinkTitle>
                 <MenuFooter>
                 {FooterData.map((item) => {
                       return ( 
-                        <ListFormat>
+                        <ListFormat>     
                           <Link to={item.path} className="link-styles">
                             <li> {item.title} </li>
                           </Link>
@@ -50,7 +51,7 @@ function FooterComp(props) {
             </ThirdColumn>
 
             <Bar>
-              <TextBox> CopyRight 2022 | <AiFillGithub /> | An RCOS Project </TextBox>
+              <BarTextBox> CopyRight 2022 | <AiFillGithub /> | An RCOS Project </BarTextBox>
             </Bar>
       </footer>
   );
