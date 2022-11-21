@@ -1,0 +1,40 @@
+:root {
+    --circle-boarder: 14px solid #355cd2;
+}
+
+.circle-image {
+    height: 100%;
+}
+
+#circle-s {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border: var(--circle-boarder);
+    border-radius: 50%;
+}
+
+#circle-m {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border: var(--circle-boarder);
+    border-radius: 50%;
+}
+
+#circle-l {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border: var(--circle-boarder);
+    border-radius: 50%;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.flex-direction {
+    display: flex;
+    flex-direction: row;
+}
