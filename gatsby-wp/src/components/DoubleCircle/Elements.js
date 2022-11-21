@@ -22,12 +22,10 @@ export const CirclesContainer = styled.div`
     flex-flow: ${props => props.reverse ? 'row-reverse' : 'row' };
 `
 
-
-
 export const InnerCircleContainer = styled.div`
     position: absolute;
     transform: translateX(-50%);
-    bottom: -10px;
+    bottom: -20px;
 
     display: flex;
     flex-flow: ${props => props.reverse ? 'row-reverse' : 'row' };

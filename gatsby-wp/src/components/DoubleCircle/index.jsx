@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import "./matt_shapes.css"
+import "./DoubleCircle.css"
 import { CirclesContainer, ContentContainer, InnerCircleContainer } from './Elements'
+
+// select images 
 import outerCircleImage from "../../images/cemetery/IMG8.jpg"
 import innerCircleImage from "../../images/cemetery/IMG15.jpg"
 
@@ -10,6 +12,7 @@ import innerCircleImage from "../../images/cemetery/IMG15.jpg"
 
 function DoubleCircles(props) {
 
+    // set the size of the circles used
     const [circleOuterSize, setCircleOuterSize] = useState("l");
     const [circleInnerSize, setCircleInnerSize] = useState("m");
 
