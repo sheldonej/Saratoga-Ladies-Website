@@ -1,5 +1,3 @@
-//<DoubleCircle circle1-size={"s"} circle2-size={"m"} circle1-image={"/"} circle2-image={"s"}/>
-
 import * as React from "react"
 import { ContentContainer, SectionOneThirdContainer, SectionTwoThirdContainer,
     SectionWrapper, SectionPreHeaderText  } from './SectionElements' 
@@ -23,9 +21,5 @@ const SectionThree = () => {
         </ContentContainer>
     )
 }
-// convert css to element (using type componeots)
-// Note: section 3 code is here (double circle)
-// use this as a reference to make style copoonnet 
-// convert double circle to elements.cs, move smaller circle to right and update cirle
  
 export default SectionThree;

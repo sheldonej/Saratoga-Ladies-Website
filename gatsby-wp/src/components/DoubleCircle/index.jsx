@@ -6,13 +6,11 @@ import { CirclesContainer, ContentContainer, InnerCircleContainer } from './Elem
 import outerCircleImage from "../../images/cemetery/IMG8.jpg"
 import innerCircleImage from "../../images/cemetery/IMG15.jpg"
 
-
-// TODO: Add documentation
-// TODO: move unused files to depricated
-
+// Double Circles Component
 function DoubleCircles(props) {
 
     // set the size of the circles used
+    // supports "s" "m" and "l" for small medium and large circles respectively
     const [circleOuterSize, setCircleOuterSize] = useState("l");
     const [circleInnerSize, setCircleInnerSize] = useState("m");
 

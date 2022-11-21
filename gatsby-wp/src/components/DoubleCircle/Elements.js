@@ -1,6 +1,3 @@
-// css to this file for style components 
-//See Section 3 for guide
-
 import styled from 'styled-components'
 
 export const ContentContainer = styled.div`
