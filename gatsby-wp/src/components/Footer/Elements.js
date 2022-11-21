@@ -145,7 +145,7 @@ export const Bar = styled.div`
 
 export const MissionStatementTitle=styled.div`
     width: 100%;
-    height: 30%;
+    height: 10%;
     @media only screen and (max-width: 1000px) {
         & {
             text-align: center;
@@ -154,7 +154,6 @@ export const MissionStatementTitle=styled.div`
     }
     @media only screen and (max-width: 800px) {
         & {
-            height: 30%;
             text-align: center;
             font-size: small;
         }
@@ -165,7 +164,7 @@ export const MissionStatementTitle=styled.div`
 
 export const DonationTitle=styled.div`
     width: 100%;
-    height: 20%;
+    height: 10%;
     @media only screen and (max-width: 1000px) {
         & {
             text-align: center;
@@ -194,7 +193,6 @@ export const LinkTitle=styled.div`
     }
     @media only screen and (max-width: 800px) {
         & {
-            height: 30%;
             text-align: center;
             font-size: small;
         }
@@ -223,9 +221,8 @@ export const BarTextBox = styled.div`
 export const MenuFooter = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
-    width: 100%;
-    height: 70%;
+    width: 50%;
+    height: 80%;
     font-size: small; 
 
     &:visited {
@@ -233,10 +230,32 @@ export const MenuFooter = styled.div`
         color:white;
     }
 
+    @media only screen and (max-width: 1000px){
+    }
     @media only screen and (max-width: 800px){
-        font-size: xx-small;
+        justify-content: right;
+
     }
 `
+
+export const SecondMenuFooter = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 50%;
+    height: 80%;
+    font-size: small; 
+
+    &:visited {
+        text-decoration: none;
+        color:white;
+    }
+
+    @media only screen and (max-width: 1000px){
+    }
+    @media only screen and (max-width: 800px){
+    }
+`;
 
 export const Button = styled.button`
     background-color: var(--saratoga-red);
@@ -270,7 +289,7 @@ export const Button = styled.button`
     }
 `;
 
-export const LinkStyles = styled.link`
+export const LinkStyles = styled.li`
     &:link {
         text-align: center;
         color: black;
@@ -284,9 +303,32 @@ export const LinkStyles = styled.link`
     &:hover{
         text-decoration: underline;
     }
+
+    @media only screen and (max-width: 1000px){
+        display: inline-block;
+        padding: 20px;
+    }
+    @media only screem amd (max-width: 800px){
+        display: ;
+        padding: 0;
+    }
 `
 
 export const ListFormat = styled.ul`
     list-style-type: none;
-    margin: 0px;
+
+    &:link {
+        text-align: center;
+        color: black;
+        text-decoration: none;
+    }
+    &:visited{
+        color: black;
+        text-decoration: none;
+    }
+    
+    &:hover{
+        text-decoration: underline;
+    }
+
 `

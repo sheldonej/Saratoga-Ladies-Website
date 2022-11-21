@@ -1,19 +1,11 @@
-/* In the footer, we will be entering the colors of each component, eventually
-      I am also going to want to get rid of the borders except for the middle one which will have distance between
-      components (10px for large screen). Four components in total. 
-      
-      Make functional component copy the divs 
-*/
-    
 import * as React from "react"
 import "../../index.css"
 import "../app/footer.css"
 import "../header.css"
-import {Link, navigate} from "gatsby"
-import IMG from '../../images/SaratogaLadiesLogo.png'
+import {Link} from "gatsby"
 import { AiFillGithub } from "react-icons/ai";
-import { FooterData } from "../../Constants.js"
-import { FirstColumn, SecondColumn, ThirdColumn, Bar, Button, TextBox, BarTextBox, MenuFooter, MissionStatementTitle, ListFormat, DonationTitle, LinkTitle, LinkStyles } from "./Elements.js"
+import { FooterData, FooterDataTwo } from "../../Constants.js"
+import { FirstColumn, SecondColumn, ThirdColumn, Bar, Button, TextBox, BarTextBox, MenuFooter, MissionStatementTitle, ListFormat, DonationTitle, LinkTitle, LinkStyles, SecondMenuFooter} from "./Elements.js"
 
 function FooterComp(props) {
   return (
@@ -41,13 +33,24 @@ function FooterComp(props) {
                 <MenuFooter>
                   <ListFormat>
                   {FooterData.map((item) =>
-                          <li> 
-                            <Link to={item.path} className="link-styles"> {item.title}</Link>
-                          </li>
+                          <LinkStyles> 
+                            <Link to={item.path}> {item.title}</Link>
+                          </LinkStyles>
                        )  
                   }
                   </ListFormat>
                 </MenuFooter>
+
+                <SecondMenuFooter>
+                  <ListFormat>
+                  {FooterDataTwo.map((item) =>
+                          <LinkStyles> 
+                            <Link to={item.path}> {item.title}</Link>
+                          </LinkStyles>
+                       )  
+                  }
+                  </ListFormat>
+                </SecondMenuFooter>
             </ThirdColumn>
 
             <Bar>
