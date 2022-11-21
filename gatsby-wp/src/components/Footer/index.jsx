@@ -12,42 +12,47 @@ import "../header.css"
 import {Link, navigate} from "gatsby"
 import IMG from '../../images/SaratogaLadiesLogo.png'
 import { AiFillGithub } from "react-icons/ai";
+import { FooterData } from "../../Constants.js"
+import { FirstColumn, SecondColumn, ThirdColumn, Bar, Button, TextBox, MenuFooter, MissionStatementTitle, ListFormat, LinkStyles } from "./Elements.js"
 
 function FooterComp(props) {
-    return (
-        <footer className="filler-height-200" style={
-            {display: "flex", flexDirection: "row", flexWrap: "wrap"}}>
+  return (
+      <footer className="filler-height-200" style={
+          {display: "flex", flexDirection: "row", flexWrap: "wrap"}}>
 
-              <div className="first_column" style ={
-                {display: "flex"}}>
-                <img src={IMG} style={{objectFit: "contain"}}/>
-              </div>
-
-
-              <div className="second_column" style ={
-                {display:"flex"}}>
-                  <div className="textBox" style={{backgroundColor: "blue", height: "100%", width: "100%"}}>
-                    Mission Statement Now: 
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?
-
-                  </div>
-                </div>
+            <FirstColumn>
+              <Button>
+                Click to donate to the Saratoga Ladies
+              </Button>
+            </FirstColumn>
 
 
-              <div className="third_column" style={{display: "flex"}}>
-                  <div className="menu-footer">
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/blog">Blog</Link></li>
-                    <li><Link to="/donations">Donations</Link></li>
-                  </div>
+            <SecondColumn>
+                <MissionStatementTitle style ={{height: "30%"}}> Mission Statement</MissionStatementTitle>
+                  <TextBox style={{ height: "70%", width: "50%", fontSize: ".5em"}}>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas.
+                </TextBox>
+            </SecondColumn>
 
-              </div>
 
-              <div className="Bar" style=
-              {{display: "flex"}}>
-              <div className="textBox"> CopyRight 2022 | <AiFillGithub /> | An RCOS Project </div>
-              </div>
-        </footer>
-    );
+            <ThirdColumn>
+                <MenuFooter>
+                {FooterData.map((item) => {
+                      return ( 
+                        <ListFormat>
+                          <Link to={item.path} className="link-styles">
+                            <li> {item.title} </li>
+                          </Link>
+                        </ListFormat>
+                       )  
+                      })}
+                </MenuFooter>
+            </ThirdColumn>
+
+            <Bar>
+              <TextBox> CopyRight 2022 | <AiFillGithub /> | An RCOS Project </TextBox>
+            </Bar>
+      </footer>
+  );
 }
 export default FooterComp;

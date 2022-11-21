@@ -1,0 +1,59 @@
+.circles{
+    position:absolute;
+    right:330px;
+    top:80px;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(54, 5, 250);
+    border-radius: 50%;
+    
+  }
+
+  .item1{
+    
+    grid-area: One;
+  }
+  
+  .item2{
+   
+    grid-area: Two;
+  }
+  
+  .item3{
+    
+    grid-area: Three;
+  }
+  
+  .item4{
+    
+    grid-area: Four;
+  }
+  
+  
+  #diamond {
+    position:absolute;
+    background: pink;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    transform:rotate(45deg);
+    left:365px;
+    top:120px;
+  }
+  
+  
+    
+  #text-box{
+    position:absolute;
+    bottom: 100px;
+    left:300px;
+    resize: none;
+    height: 300px;
+  }
+  
+  #ct{
+    position:absolute;
+    bottom: 200px;
+    right:350px;
+    color:green;
+  }

@@ -1,49 +1,43 @@
 import * as React from "react"
 import "../../index.css"
-import "../header.css"
 import { HeaderData } from "../../Constants.js"
 import { Link, navigate } from "gatsby"
 import { useState } from 'react'
-import IMG from '../../images/SaratogaLadiesLogo.png'
+import {MarginTop35, DropBtn, Dropdown, DropdownContent, HeaderWrapper, ImageContainer, Item } from './Elements'
+
+//create onHover function for drop 
+
+function MappedDropDown(props){
+    return (<Dropdown style={{marginTop: props.mrgnTop}}>
+                <DropBtn>{props.hero}</DropBtn>
+                <DropdownContent>
+                    {HeaderData[props.index].map((item) => {
+                        return ( <Item onClick={()=>navigate(item.path)}>
+                            {item.title}
+                        </Item> )
+                        })}
+                </DropdownContent>
+            </Dropdown>
+    )
+}
 
 function HeaderContent(props){
-    const [display, setDisplay] = useState( 'none' )
-
-    function handleDropDownClick() {
-        if (display == 'none'){
-            setDisplay( 'flex' )
-        }
-        else {
-            setDisplay( 'none' )
-        }
-    }
-
     return (
-        <div className="header-wrapper">
-            <div className="container1">
-                <Link to="/rodria11">Adrian's Webpage</Link>
-            </div>
-            <div className="container2">
-                <Link to="/hadav">Vishal's Webpage</Link>
-            </div>
-            <div className="imageContainer" onClick={()=>navigate('/')}>
+        <HeaderWrapper>
+            <MappedDropDown mrgnTop="0px" hero="Join Now!" index="0"/>
+
+            <MappedDropDown mrgnTop="35px" hero="Community" index="1"/>
+
+            <ImageContainer onClick={()=>navigate('/home')}>
                 The Saratoga Ladies
-            </div>
-            <div className="container3">
-                <Link to="/merrim5">Matthew's Webpage</Link>
-            </div>
-            <div className="dropcontainer" onClick={()=>handleDropDownClick()}>
-                DROP CONTAINER
-                <div className="drop-content-container" style={{display: display}}>
-                    {HeaderData.map((item) => {
-                        return ( <div className="dropdown-content">
-                        {item.title}
-                        </div> )
-                    })}
-                </div>
-            </div>
+            </ImageContainer>
+
+            <MappedDropDown mrgnTop="35px" hero="Meet the Ladies" index="2"/>
+
+            <MappedDropDown mrgnTop="0px" hero="About" index="3"/>
+
             <svg viewBox="0 0 40 2" fill="#fff"><path d={`M0 0 Q 20 2.75, 40 0`} /></svg>
-        </div>
+        </HeaderWrapper>
     )
 }
 
