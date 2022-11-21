@@ -121,3 +121,10 @@ export const FooterData = [
     path: "a"
   }
 ];
+
+export const FooterData2 = [
+  {
+    title: "Blog",
+    path: "a"
+  }
+]
