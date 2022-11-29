@@ -5,7 +5,7 @@ import "../header.css"
 import {Link} from "gatsby"
 import { AiFillGithub } from "react-icons/ai";
 import { FooterData, FooterDataTwo } from "../../Constants.js"
-import { FirstColumn, SecondColumn, ThirdColumn, Bar, Button, TextBox, BarTextBox, MenuFooter, MissionStatementTitle, ListFormat, DonationTitle, LinkTitle, LinkStyles, SecondMenuFooter} from "./Elements.js"
+import { FirstColumn, SecondColumn, ThirdColumn, Bar, Button, TextBox, BarTextBox, MenuFooter, ListFormat, LinkStyles, SecondMenuFooter, Title} from "./Elements.js"
 
 function FooterComp(props) {
   return (
@@ -13,7 +13,7 @@ function FooterComp(props) {
           {display: "flex", flexDirection: "row", flexWrap: "wrap"}}>
 
             <FirstColumn>
-              <DonationTitle> Donations </DonationTitle>
+              <Title style={{ textAlign: "unset" }}> Our Mission </Title>
               <Button>
                 Click to donate to the Saratoga Ladies
               </Button>
@@ -21,7 +21,7 @@ function FooterComp(props) {
 
 
             <SecondColumn>
-                <MissionStatementTitle> Mission Statement</MissionStatementTitle>
+                <Title> Join Our Email</Title>
                   <TextBox>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas.
                 </TextBox>
@@ -29,13 +29,11 @@ function FooterComp(props) {
 
 
             <ThirdColumn>
-            <LinkTitle>Links</LinkTitle>
+            <Title style={{textAlign:"end"}}>Links</Title>
                 <MenuFooter>
                   <ListFormat>
-                  {FooterData.map((item) =>
-                          <LinkStyles> 
-                            <Link to={item.path}> {item.title}</Link>
-                          </LinkStyles>
+                  {FooterData.map((item) => 
+                            <LinkStyles to={item.path}> {item.title}</LinkStyles>
                        )  
                   }
                   </ListFormat>
@@ -44,9 +42,7 @@ function FooterComp(props) {
                 <SecondMenuFooter>
                   <ListFormat>
                   {FooterDataTwo.map((item) =>
-                          <LinkStyles> 
-                            <Link to={item.path}> {item.title}</Link>
-                          </LinkStyles>
+                            <LinkStyles to={item.path}> {item.title}</LinkStyles>
                        )  
                   }
                   </ListFormat>

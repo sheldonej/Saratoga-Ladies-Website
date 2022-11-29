@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Link} from "gatsby"
 
 export const FirstColumn = styled.div`
     display: flex;
@@ -143,7 +144,7 @@ export const Bar = styled.div`
     }
 `
 
-export const MissionStatementTitle=styled.div`
+export const SecondTitle=styled.div`
     width: 100%;
     height: 10%;
     @media only screen and (max-width: 1000px) {
@@ -162,7 +163,7 @@ export const MissionStatementTitle=styled.div`
     font-size: larger;
 `;
 
-export const DonationTitle=styled.div`
+export const FirstTitle=styled.div`
     width: 100%;
     height: 10%;
     @media only screen and (max-width: 1000px) {
@@ -182,7 +183,7 @@ export const DonationTitle=styled.div`
     font-size: larger;
 `;
 
-export const LinkTitle=styled.div`
+export const ThirdTitle=styled.div`
     width: 100%;
     height: 20%;
     @media only screen and (max-width: 1000px) {
@@ -198,6 +199,25 @@ export const LinkTitle=styled.div`
         }
     }
     text-align: right;
+    font-size: larger;
+`;
+
+export const Title=styled.div`
+    width: 100%;
+    height: 10%;
+    @media only screen and (max-width: 1000px) {
+        & {
+            text-align: center;
+            height: 10%;
+        }
+    }
+    @media only screen and (max-width: 800px) {
+        & {
+            text-align: center;
+            font-size: small;
+        }
+    }
+    text-align: center;
     font-size: larger;
 `;
 
@@ -258,7 +278,7 @@ export const SecondMenuFooter = styled.div`
 `;
 
 export const Button = styled.button`
-    background-color: var(--saratoga-red);
+    background-color: white;
     height: 70%;
     width: 50%;
     text-align: center;
@@ -266,7 +286,7 @@ export const Button = styled.button`
     border-radius: 12px;
     border-color: var(--saratoga-red);
     transition-duration: 0.4s;
-    color: white;
+    color: black;
 
     &:hover {
         background-color: white; 
@@ -289,12 +309,21 @@ export const Button = styled.button`
     }
 `;
 
-export const LinkStyles = styled.li`
-    &:link {
+export const LinkStyles = styled(Link)`
+    display: flex;
+    color: black;
+    text-decoration: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    filter: drop-shadow(0 0 .75rem white);
+
+
+
+    /* &:Link {
         text-align: center;
         color: black;
         text-decoration: none;
-    }
+    } */
     &:visited{
         color: black;
         text-decoration: none;
@@ -308,9 +337,13 @@ export const LinkStyles = styled.li`
         display: inline-block;
         padding: 20px;
     }
-    @media only screem amd (max-width: 800px){
-        display: ;
-        padding: 0;
+    @media only screen and (max-width: 800px){
+        display: inline-block;
+        padding: 5px;
+        font-size: small;
+        text-content: center;
+        justify-content: center;
+        align-items: center;
     }
 `
 
@@ -325,10 +358,6 @@ export const ListFormat = styled.ul`
     &:visited{
         color: black;
         text-decoration: none;
-    }
-    
-    &:hover{
-        text-decoration: underline;
     }
 
 `
