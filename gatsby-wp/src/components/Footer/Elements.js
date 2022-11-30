@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import {Link} from "gatsby"
 
+
 export const FirstColumn = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     width: 33.3333%;
     height: 80%;
     background-color: var(--secondary-bg-color);
@@ -121,7 +121,7 @@ export const ThirdColumn = styled.div`
         height: 30%;
         width: 100%;
     }
-`
+`;
 
 export const Bar = styled.div`
     display: flex;
@@ -142,169 +142,134 @@ export const Bar = styled.div`
         height: 10%;
         width: 100%;
     }
-`
+`;
 
-export const SecondTitle=styled.div`
+export const Title=styled.h1`
+    color: white; 
     width: 100%;
-    height: 10%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-decoration: underline; 
+    text-align: center; 
+    font-size: larger; 
     @media only screen and (max-width: 1000px) {
         & {
-            text-align: center;
-            height: 10%;
+            font-size: small;
         }
     }
     @media only screen and (max-width: 800px) {
         & {
-            text-align: center;
             font-size: small;
         }
     }
-    text-align: center;
-    font-size: larger;
 `;
 
-export const FirstTitle=styled.div`
-    width: 100%;
-    height: 10%;
-    @media only screen and (max-width: 1000px) {
-        & {
-            text-align: center;
-            height: 10%;
-        }
-    }
-    @media only screen and (max-width: 800px) {
-        & {
-            height: 30%;
-            text-align: center;
-            font-size: small;
-        }
-    }
-    text-align: left;
-    font-size: larger;
-`;
-
-export const ThirdTitle=styled.div`
-    width: 100%;
-    height: 20%;
-    @media only screen and (max-width: 1000px) {
-        & {
-            text-align: center;
-            height: 10%;
-        }
-    }
-    @media only screen and (max-width: 800px) {
-        & {
-            text-align: center;
-            font-size: small;
-        }
-    }
-    text-align: right;
-    font-size: larger;
-`;
-
-export const Title=styled.div`
-    width: 100%;
-    height: 10%;
-    @media only screen and (max-width: 1000px) {
-        & {
-            text-align: center;
-            height: 10%;
-        }
-    }
-    @media only screen and (max-width: 800px) {
-        & {
-            text-align: center;
-            font-size: small;
-        }
-    }
-    text-align: center;
-    font-size: larger;
-`;
-
-export const TextBox = styled.div`
+export const TextBox = styled.p`
     height: 70%;
-    width: 50%; 
-    font-size: .5em;
-    justify-content: center;
+    width: 100%; 
+    font-size: .7em;
     margin: auto;
     text-align: center;
-    align-items: center;
-`
+    color: black; 
 
+    @media only screen and (max-width: 1000px) {
+        &{
+            font-size: .5em;
+        }
+    }
+    @media only screen and (max-width: 800px) {
+        &{
+            font-size: .6em;
+        }
+    }
+`;
+export const SecondTextBox = styled.p`
+    height: 40%;
+    width: 100%; 
+    font-size: .6em;
+    margin: auto;
+    text-align: center;
+    color: black; 
+
+    @media only screen and (max-width: 1000px) {
+        &{
+            height: 70%;
+            width: 75%;
+            font-size: .5em;
+            margin: 0; 
+        }
+    }
+    @media only screen and (max-width: 800px) {
+        &{
+            margin: auto;
+            font-size: .6em;
+        }
+    }
+`;
+
+export const MediaBox = styled.div`
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    justify-content: center;
+    font-size: 1.5em;
+    color: black;
+
+    @media only screen and (max-width: 1000px) {
+        &{
+            font-size: .9em;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        &{
+            font-size: 1.1em;
+        }
+    }
+
+`;
+export const Logo = styled.i`
+    color: black;
+    &:hover {
+        background-color: white; 
+        color: black;
+    }
+`;
 export const BarTextBox = styled.div`
     justify-content: center;
     margin: auto;
-    text-align: center;
-    align-items: center;
-`;
-
-export const MenuFooter = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    height: 80%;
     font-size: small; 
-
-    &:visited {
-        text-decoration: none;
-        color:white;
-    }
-
-    @media only screen and (max-width: 1000px){
-    }
-    @media only screen and (max-width: 800px){
-        justify-content: right;
-
-    }
-`
-
-export const SecondMenuFooter = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    width: 50%;
-    height: 80%;
-    font-size: small; 
-
-    &:visited {
-        text-decoration: none;
-        color:white;
-    }
-
-    @media only screen and (max-width: 1000px){
-    }
-    @media only screen and (max-width: 800px){
-    }
 `;
 
 export const Button = styled.button`
-    background-color: white;
-    height: 70%;
-    width: 50%;
+    background-color: transparent;
+    height: 20%;
+    width: 100%;
     text-align: center;
     font-size: 16px;
-    border-radius: 12px;
-    border-color: var(--saratoga-red);
+    border-color: white;
     transition-duration: 0.4s;
     color: black;
+    margin-left: 10px;
+    margin-right: 10px;
 
     &:hover {
         background-color: white; 
-        color: var(--saratoga-red);
+        color: black;
     }
 
     @media only screen and (max-width: 1000px) {
         & {
             font-size: small;
-            width: 60%;
-            height: 40%;
+            width: 20%;
         }
     }
 
     @media only screen and (max-width: 800px){
         & {
             height: 50%;
-            width: 70%;
         }
     }
 `;
@@ -318,14 +283,9 @@ export const LinkStyles = styled(Link)`
     filter: drop-shadow(0 0 .75rem white);
 
 
-
-    /* &:Link {
-        text-align: center;
-        color: black;
-        text-decoration: none;
-    } */
     &:visited{
         color: black;
+        list-style-type: circle;
         text-decoration: none;
     }
     
@@ -335,7 +295,6 @@ export const LinkStyles = styled(Link)`
 
     @media only screen and (max-width: 1000px){
         display: inline-block;
-        padding: 20px;
     }
     @media only screen and (max-width: 800px){
         display: inline-block;
@@ -348,16 +307,14 @@ export const LinkStyles = styled(Link)`
 `
 
 export const ListFormat = styled.ul`
-    list-style-type: none;
-
-    &:link {
-        text-align: center;
-        color: black;
-        text-decoration: none;
+    height: 60%;
+    width: 100%;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: circle; 
+    @media only screen and (max-width: 1000px){
+        height: 30%;
     }
-    &:visited{
-        color: black;
-        text-decoration: none;
-    }
-
-`
+`;

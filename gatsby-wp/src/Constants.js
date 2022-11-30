@@ -124,7 +124,28 @@ export const FooterData = [
   {
     title: "FAQ",
     path: "b"
+  },
+  
+  {
+    title: "New",
+    path: "a"
+  },
+
+  {
+    title: "Set",
+    path: "a"
+  },
+
+  {
+    title: "of",
+    path: "a"
+  },
+
+  {
+    title: "links",
+    path: "a"
   }
+
 ];
 
 export const FooterDataTwo = [

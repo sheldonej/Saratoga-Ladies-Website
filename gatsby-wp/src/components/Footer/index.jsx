@@ -2,10 +2,9 @@ import * as React from "react"
 import "../../index.css"
 import "../app/footer.css"
 import "../header.css"
-import {Link} from "gatsby"
-import { AiFillGithub } from "react-icons/ai";
-import { FooterData, FooterDataTwo } from "../../Constants.js"
-import { FirstColumn, SecondColumn, ThirdColumn, Bar, Button, TextBox, BarTextBox, MenuFooter, ListFormat, LinkStyles, SecondMenuFooter, Title} from "./Elements.js"
+import { AiFillGithub, AiFillInstagram, AiFillFacebook, AiFillTwitterSquare, AiFillYoutube} from "react-icons/ai";
+import { FooterData} from "../../Constants.js"
+import { FirstColumn, SecondColumn, ThirdColumn, Bar, Button, TextBox, BarTextBox, ListFormat, LinkStyles, SecondMenuFooter, Title, MediaBox, SecondTextBox, Logo} from "./Elements.js"
 
 function FooterComp(props) {
   return (
@@ -13,41 +12,40 @@ function FooterComp(props) {
           {display: "flex", flexDirection: "row", flexWrap: "wrap"}}>
 
             <FirstColumn>
-              <Title style={{ textAlign: "unset" }}> Our Mission </Title>
-              <Button>
-                Click to donate to the Saratoga Ladies
-              </Button>
+              <Title> Our Mission  </Title>
+              <TextBox style={{height:"50%"}}>  
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum 
+                explicabo reprehenderit optio amet ab temporibus asperiores quasi 
+                cupiditate. Voluptatum ducimus voluptates voluptas.
+              </TextBox>
+              <MediaBox>
+               <a href="link"><AiFillInstagram></AiFillInstagram></a>
+               <a href="link"><AiFillFacebook></AiFillFacebook></a>
+               <a href="link"><AiFillTwitterSquare></AiFillTwitterSquare></a>
+               <a href="link"><AiFillYoutube></AiFillYoutube></a>
+              </MediaBox>
             </FirstColumn>
 
 
             <SecondColumn>
-                <Title> Join Our Email</Title>
-                  <TextBox>
+                <Title> Join Our Email </Title>
+                  <SecondTextBox>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas.
-                </TextBox>
+                </SecondTextBox>
+                <Button> Sign Up </Button> 
             </SecondColumn>
 
 
             <ThirdColumn>
-            <Title style={{textAlign:"end"}}>Links</Title>
-                <MenuFooter>
+            <Title>Links</Title>
                   <ListFormat>
                   {FooterData.map((item) => 
-                            <LinkStyles to={item.path}> {item.title}</LinkStyles>
+                            <li><LinkStyles to={item.path}> {item.title}</LinkStyles></li>
                        )  
                   }
                   </ListFormat>
-                </MenuFooter>
-
-                <SecondMenuFooter>
-                  <ListFormat>
-                  {FooterDataTwo.map((item) =>
-                            <LinkStyles to={item.path}> {item.title}</LinkStyles>
-                       )  
-                  }
-                  </ListFormat>
-                </SecondMenuFooter>
-            </ThirdColumn>
+        </ThirdColumn>
 
             <Bar>
               <BarTextBox> CopyRight 2022 | <AiFillGithub /> | An RCOS Project </BarTextBox>
