@@ -2,14 +2,14 @@
 .first_column{ 
     width: 33.3333%;
     height: 80%;
-    background-color: var(--secondary-bg-color);
+    /*background-color: var(--secondary-bg-color);*/
     position: relative;
 }
 
 .second_column{
     width: 33.3333%;
     height: 80%;
-    background-color: var(--secondary-bg-color);
+    /*background-color: var(--secondary-bg-color);*/
     position: relative;
 }
 
@@ -35,14 +35,14 @@
 .third_column{
    width: 33.3333%;
    height: 80%;
-   background-color: var(--secondary-bg-color);
+   /*background-color: var(--secondary-bg-color);*/
    position: relative;
 }
 
 .Bar{
     width: 100%;
     height: 20%; 
-    background-color: var(--secondary-bg-color); 
+    /*background-color: var(--secondary-bg-color);*/ 
     position: relative;
 }
 .Bar:after{
@@ -142,3 +142,20 @@
     }
 
  }
+
+
+.footer-section {
+
+    display: flex;
+    width:  33.333%;
+    
+    height: fit-content;
+    max-height: 400px;
+
+    flex-flow: column;
+    justify-content: space-between;
+
+    padding: 30px 40px;
+    box-sizing: border-box;
+    position: relative;
+}

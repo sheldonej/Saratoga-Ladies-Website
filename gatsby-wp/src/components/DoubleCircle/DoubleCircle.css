@@ -1,5 +1,5 @@
 :root {
-    --circle-boarder: 14px solid #355cd2;
+    --circle-boarder: 14px solid #333;
 }
 
 .circle-image {
@@ -8,24 +8,30 @@
 
 #circle-s {
     display: flex;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    min-width: 200px;
+    height: 200px;
+    min-height: 200px;
     border: var(--circle-boarder);
     border-radius: 50%;
 }
 
 #circle-m {
     display: flex;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
+    min-height: 300px;
     border: var(--circle-boarder);
     border-radius: 50%;
 }
 
 #circle-l {
     display: flex;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    min-width: 400px;
+    height: 400px;
+    min-height: 400px;
     border: var(--circle-boarder);
     border-radius: 50%;
 }

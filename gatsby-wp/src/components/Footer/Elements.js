@@ -2,40 +2,172 @@ import styled from "styled-components";
 import {Link} from "gatsby"
 
 
-export const FirstColumn = styled.div`
+export const FooterWrapper = styled.footer` 
     display: flex;
+    width: 100%;
+    height: auto;
+
+    flex-flow: column;
+`
+
+
+export const FooterTop = styled.div`
+    display: flex;
+    flex-flow: row;
     flex-wrap: wrap;
-    width: 33.3333%;
-    height: 80%;
-    background-color: var(--secondary-bg-color);
+    flex: 1 0;
+
+    background: transparent;
+
+    box-shadow: rgb(0 0 0) 0px 0px 10px;
+    position: relative;
+    z-index: 9999;
+`
+
+export const FooterBottom = styled.div`
+    display: flex;
+    height: 40px;
+
+    background: lightgrey;
+    position: relative;
+    z-index: 9;
+    padding: 0px 20px;
+
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+`
+
+
+export const FooterSection = styled.div`
+    display: flex;
+    width:  fit-content;
+
+    height: fit-content;
+    max-height: 200px;
+
+    flex-flow: column;
+    justify-content: space-between;
+
+    padding: 30px 40px;
+    //margin-inline: 20px;
+    box-sizing: border-box;
     position: relative;
 
-    @media only screen and (max-width: 1000px) {
-        & {
-            height: 40%;
-            width: 50%;
-        }
+    p {
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 20px 0px;
+
+        color: #000;
     }
 
-    @media only screen and (max-width: 800px){
-        & {
-            height: 30%;
-            width: 100%;
-        }
-    }
-`;
+    button {
+        margin: 0px 0px 10px 0px;
+        height: 40px;
+    } 
+`
 
-export const SecondColumn = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    width: 33.3333%;
-    height: 80%;
-    background-color: var(--secondary-bg-color);
+
+
+export const FooterSectionTitle = styled.h4`
+    color: #000;
+    line-height: 1.0;
+    font-size: 18px;
+
+    width: fit-content;
+    margin: 0px 0px 25px 0px;
+    padding: 0px 0px 0px 0px;
+
     position: relative;
 
     &:before {
         content: '';
-        border-left: 1px solid var(--footer-line-color);
+        position: absolute;
+        left: 2px;
+        bottom: -5px;
+        height: 2px;
+        width: 90px;
+
+        background: lightgrey;
+    
+    }
+`
+
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+export const FirstColumn = styled.div.attrs({ 
+    className: 'footer-section',
+    })`
+
+    p {
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 20px 0px;
+
+        color: #000;
+        font-size: var(--saratoga-small-text);
+    }
+
+    @media only screen and (max-width: 1000px) {
+        & { 
+            width: 50% !important;
+            max-width: 50% !important;  
+        }
+    }
+
+    @media only screen and (max-width: 800px){
+        & { 
+            width: 100% !important;
+            max-width: 100% !important; 
+        }
+    }
+`;
+
+export const SecondColumn =  styled.div.attrs({ 
+    className: 'footer-section',
+    })`
+     
+    p {
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 20px 0px;
+
+        color: #000;
+        font-size: var(--saratoga-small-text);
+    }
+
+    button {
+        color: #fff !important;
+        margin: 0px 0px 10px 0px;
+        height: 40px;
+        //box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius:  5px;
+        cursor: pointer;
+
+        //background-color: transparent; 
+        text-align: center;
+        font-size: var(--saratoga-small-text);
+        //border-color: white;
+        transition-duration: 0.4s;
+        color: black;
+        margin-left: 10px;
+        margin-right: 10px;
+        border: none;
+
+        background-color: #c23b22;
+        box-shadow: inset 0 -0.6em 1em -0.35em rgb(0 0 0 / 17%), inset 0 0.6em 2em -0.3em rgb(255 255 255 / 15%), inset 0 0 0em 0.05em rgb(255 255 255 / 12%), rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    button:hover {
+        //background-color: lightblue; 
+        color: #fff;
+    
+    }
+
+
+    &:before {
+        content: '';
+        border-left: 2.5px solid var(--footer-line-color);
         position: absolute;
         height: calc(100% - var(--footer-spacing));
         top: calc(var(--footer-spacing)/2);
@@ -44,20 +176,22 @@ export const SecondColumn = styled.div`
 
     &:after {
         content: '';
-        border-left: 1px solid var(--footer-line-color);
+        border-left: 2.5px solid var(--footer-line-color);
         position: absolute;
         height: calc(100% - var(--footer-spacing));
         top: calc(var(--footer-spacing)/2);
         right: 0;
     }
 
-    @media only screen and (max-width: 1000px){
-        height: 40%;
-        width: 50%;
+    @media only screen and (max-width: 1000px) {
+        & { 
+            width: 50% !important;
+            max-width: 50% !important;  
+        }
 
         &:before{
             content: '';
-            border-left: 1px solid var(--footer-line-color);
+            border-left: 2.5px solid var(--footer-line-color);
             position: absolute;
             height: calc(100% - var(--footer-spacing));
             top: calc(var(--footer-spacing)/2);
@@ -71,11 +205,11 @@ export const SecondColumn = styled.div`
     }
 
     @media only screen and (max-width: 800px){
-        & {
-            height: 30%;
-            width: 100%;
+        & { 
+            width: 100% !important;
+            max-width: 100% !important; 
         }
-    
+
         &:before {
             border-left: none;
         }
@@ -83,7 +217,7 @@ export const SecondColumn = styled.div`
         &:after {
             border-left: none;
             content: '';
-            border-top: 1px solid var(--footer-line-color);
+            border-top: 2.5px solid var(--footer-line-color);
             position: absolute;
             width: calc(100% - var(--footer-spacing));
             left: calc(var(--footer-spacing)/2) ;
@@ -92,24 +226,26 @@ export const SecondColumn = styled.div`
     }
 `;
 
-export const ThirdColumn = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    width: 33.3333%;
-    height: 80%;
-    background-color: var(--secondary-bg-color);
-    position: relative;
+export const ThirdColumn =  styled.div.attrs({ 
+    className: 'footer-section',
+    })`
+
+    p {
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 20px 0px;
+
+        color: #000;
+        font-size: var(--saratoga-small-text);
+    }
+
 
     @media (max-width: 1000px) {
-        height: 40%;
-        width: 100%;
-        position: relative;
-        border-left: none;
+        & {  width: 100% !important; }
 
         &:after {
             border-left: none;
             content: '';
-            border-top: 1px solid var(--footer-line-color);
+            border-top: 2.5px solid var(--footer-line-color);
             position: absolute;
             width: calc(100% - var(--footer-spacing));
             left: calc(var(--footer-spacing)/2);
@@ -118,203 +254,91 @@ export const ThirdColumn = styled.div`
     }
 
     @media (max-width: 800px){
-        height: 30%;
+        height: auto;
         width: 100%;
     }
 `;
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
 
-export const Bar = styled.div`
+
+
+export const FooterSectionIconWrapper = styled.div`
     display: flex;
-    width: 100%;
-    height: 20%; 
-    background-color: var(--secondary-bg-color); 
-    position: relative;
-    
-    &:after {
-        content: '';
-        border-top: 1px solid var(--footer-line-color);
-        position: absolute;
-        width: calc(100% - var(--footer-spacing));
-        left: calc(var(--footer-spacing)/2) ;
-    }
+    flex-flow: row;
 
-    @media (max-width: 800px){
-        height: 10%;
-        width: 100%;
-    }
-`;
-
-export const Title=styled.h1`
-    color: white; 
-    width: 100%;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    text-decoration: underline; 
-    text-align: center; 
-    font-size: larger; 
-    @media only screen and (max-width: 1000px) {
-        & {
-            font-size: small;
-        }
-    }
-    @media only screen and (max-width: 800px) {
-        & {
-            font-size: small;
-        }
-    }
-`;
-
-export const TextBox = styled.p`
-    height: 70%;
-    width: 100%; 
-    font-size: .7em;
-    margin: auto;
-    text-align: center;
-    color: black; 
-
-    @media only screen and (max-width: 1000px) {
-        &{
-            font-size: .5em;
-        }
-    }
-    @media only screen and (max-width: 800px) {
-        &{
-            font-size: .6em;
-        }
-    }
-`;
-export const SecondTextBox = styled.p`
-    height: 40%;
-    width: 100%; 
-    font-size: .6em;
-    margin: auto;
-    text-align: center;
-    color: black; 
-
-    @media only screen and (max-width: 1000px) {
-        &{
-            height: 70%;
-            width: 75%;
-            font-size: .5em;
-            margin: 0; 
-        }
-    }
-    @media only screen and (max-width: 800px) {
-        &{
-            margin: auto;
-            font-size: .6em;
-        }
-    }
-`;
-
-export const MediaBox = styled.div`
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row; 
-    justify-content: center;
-    font-size: 1.5em;
-    color: black;
-
-    @media only screen and (max-width: 1000px) {
-        &{
-            font-size: .9em;
-        }
-    }
-
-    @media only screen and (max-width: 800px) {
-        &{
-            font-size: 1.1em;
-        }
-    }
-
-`;
-export const Logo = styled.i`
-    color: black;
-    &:hover {
-        background-color: white; 
-        color: black;
-    }
-`;
-export const BarTextBox = styled.div`
-    justify-content: center;
-    margin: auto;
-    font-size: small; 
-`;
-
-export const Button = styled.button`
-    background-color: transparent;
-    height: 20%;
-    width: 100%;
-    text-align: center;
-    font-size: 16px;
-    border-color: white;
-    transition-duration: 0.4s;
-    color: black;
-    margin-left: 10px;
-    margin-right: 10px;
-
-    &:hover {
-        background-color: white; 
-        color: black;
-    }
-
-    @media only screen and (max-width: 1000px) {
-        & {
-            font-size: small;
-            width: 20%;
-        }
-    }
-
-    @media only screen and (max-width: 800px){
-        & {
-            height: 50%;
-        }
-    }
-`;
-
-export const LinkStyles = styled(Link)`
-    display: flex;
-    color: black;
-    text-decoration: none;
-    flex-direction: column;
-    flex-wrap: wrap;
-    filter: drop-shadow(0 0 .75rem white);
-
-
-    &:visited{
-        color: black;
-        list-style-type: circle;
-        text-decoration: none;
-    }
-    
-    &:hover{
-        text-decoration: underline;
-    }
-
-    @media only screen and (max-width: 1000px){
-        display: inline-block;
-    }
-    @media only screen and (max-width: 800px){
-        display: inline-block;
-        padding: 5px;
-        font-size: small;
-        text-content: center;
-        justify-content: center;
-        align-items: center;
-    }
+    justify-content: flex-start;
+    gap: 10px;
+    height: auto;
+    margin: 0px 0px 10px 0px;
 `
 
-export const ListFormat = styled.ul`
-    height: 60%;
-    width: 100%;
-    font-size: smaller;
+export const FooterIcon = styled.div`
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    
+    height: 40px;
+    width: 40px;
+
+    background: #fff;
+    //box-shadow: rgb(0 0 0) 0px 0px 3px;
+    border-radius: 5px;
+
+    background-color: #c23b22;
+    box-shadow: inset 0 -0.6em 1em -0.35em rgb(0 0 0 / 17%), inset 0 0.6em 2em -0.3em rgb(255 255 255 / 15%), inset 0 0 0em 0.05em rgb(255 255 255 / 12%), rgba(0, 0, 0, 0.24) 0px 3px 8px;
+`
+
+
+
+
+export const FooterBottomContent = styled.div`
+    display: flex;
+    width: auto;
+    flex-flow: row;
+
+    height: 100%;
+    align-items: center;
+
+    color: #000;
+
+`
+
+
+export const FooterSectionList = styled.div`
+    display: flex;
+    flex-flow: column;
     flex-wrap: wrap;
-    list-style-type: circle; 
-    @media only screen and (max-width: 1000px){
-        height: 30%;
+    flex: 1 0;
+    max-height: 200px;
+
+    background: transparent;
+    gap: 10px;
+
+
+    li {
+        color: #000;
+        width: 50%;
+        height: auto;
+        font-size: var(--saratoga-small-text);
     }
-`;
+
+    a {
+        cursor: pointer;
+        color: #000;
+       
+        
+    }
+
+    a:hover {
+        color: blue;
+        opacity: 1;
+
+    }
+
+
+`
+

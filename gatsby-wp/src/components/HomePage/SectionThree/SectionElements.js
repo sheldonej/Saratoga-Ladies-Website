@@ -43,7 +43,7 @@ export const SectionWrapper = styled.div`
         font-size: var(--saratoga-small-text);
         color: var(--saratoga-black);
         margin: 0px;
-        padding: 10px 0px 0px 0px;
+        padding: 10px 20px 0px 0px;
         max-width: 100%;
     }
 

@@ -26,4 +26,9 @@ export const InnerCircleContainer = styled.div`
 
     display: flex;
     flex-flow: ${props => props.reverse ? 'row-reverse' : 'row' };
+
+    img {
+        height: 100%;
+        top: 5px;
+    }
 `

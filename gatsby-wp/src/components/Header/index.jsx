@@ -24,17 +24,17 @@ function MappedDropDown(props){
 function HeaderContent(props){
     return (
         <HeaderWrapper>
-            <MappedDropDown mrgnTop="0px" hero="Join Now!" index="0"/>
+            <MappedDropDown mrgnTop="1.25vw" hero="Join Now!" index="0"/>
 
-            <MappedDropDown mrgnTop="35px" hero="Community" index="1"/>
+            <MappedDropDown mrgnTop="3.25vw" hero="Community" index="1"/>
 
             <ImageContainer onClick={()=>navigate('/home')}>
                 The Saratoga Ladies
             </ImageContainer>
 
-            <MappedDropDown mrgnTop="35px" hero="Meet the Ladies" index="2"/>
+            <MappedDropDown mrgnTop="3.25vw" hero="Meet the Ladies" index="2"/>
 
-            <MappedDropDown mrgnTop="0px" hero="About" index="3"/>
+            <MappedDropDown mrgnTop="1.25vw" hero="About" index="3"/>
 
             <svg viewBox="0 0 40 2" fill="#fff"><path d={`M0 0 Q 20 2.75, 40 0`} /></svg>
         </HeaderWrapper>

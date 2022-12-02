@@ -16,10 +16,9 @@ function Header(props) {
  
 function Footer(props) {
     return  (
-      <footer className="filler-height-200" style={
-        {display: "flex", flexDirection: "row", flexWrap: "wrap"}}>
-          <FooterContent colorOne={"red"}></FooterContent>
-      </footer>
+
+      <FooterContent colorOne={"red"}></FooterContent>
+
     )
 }
 

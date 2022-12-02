@@ -4,20 +4,20 @@ import styled from 'styled-components'
 export const ContentContainer = styled.div.attrs({
     className: 'section-header',
 })`
-width:100%;
-padding: 10px;
-height: fit-content;
-margin: 0px auto 20px auto;
+  width:100%;
+  padding: 10px;
+  height: fit-content;
+  margin: 0px auto 20px auto;
 `
 
 
 export const Text = styled.p`
-font-family: 'Playfair Display', serif;
-font-size: var(--saratoga-medium-text) !important;
-color: var(--saratoga-black) !important;
-margin-bottom: 20px;
-min-width: 90%;
-padding: 20px;
+  //font-family: 'Playfair Display', serif;
+  font-size: var(--saratoga-small-text) !important;
+  color: var(--saratoga-black) !important;
+  margin-bottom: 20px;
+  min-width: 90%;
+  padding: 20px;
 ` 
 
 
@@ -31,7 +31,7 @@ export const ButtonSection = styled.div.attrs({
 `
 
 export const LearnButton = styled.button`
-font-family: 'Playfair Display', serif;
+  //font-family: 'Playfair Display', serif;
   display: inline-block;
   padding:0.7em 1.7em;
   margin:0 0.3em 0.3em 0;

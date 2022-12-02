@@ -38,7 +38,7 @@ export const Item = styled.div`
 export const DropBtn = styled.div`
     background-color: rgba(0,0,0,0);
     color: var(--saratoga-red);
-    padding: 16px;
+    padding: 5px 0px;
     font-size: 16px;
     border: none;
     text-align: center;
@@ -95,10 +95,10 @@ export const ImageContainer = styled.div`
     align-items: end;
     z-index: 100000;
     font-family: 'Great Vibes', cursive;
-    margin-top: 10vh;
+    margin-top: 5.5vw;
     font-size: 2.5vw !important;
     color: var(--saratoga-red);
-    padding-right: 20px;
+    padding-right: 10px;
     cursor: pointer;
 
     /* @media screen and (min-width: 1400px) {

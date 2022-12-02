@@ -8,6 +8,7 @@ import SlideshowBanner from "../components/app/SlideshowBanner"
 import PageContentContainer from "../components/app/PageContentContainer"
 
 import SectionOne from "../components/HomePage/SectionOne/index.jsx"
+import SectionTwo from "../components/HomePage/SectionTwo/index.jsx"
 import SectionThree from "../components/HomePage/SectionThree/index.jsx"
 
 import DoubleCircle from "../components/DoubleCircle/index.jsx"
@@ -19,8 +20,8 @@ const LandingPage = () => (
       <PageContentContainer height={'auto'} >
         <SectionOne />
       </PageContentContainer> 
-      <PageContentContainer height={400} >
-        <React.Fragment />
+      <PageContentContainer height={'auto'} >
+        <SectionTwo />
       </PageContentContainer> 
       <PageContentContainer height={400} >
         <SectionThree />

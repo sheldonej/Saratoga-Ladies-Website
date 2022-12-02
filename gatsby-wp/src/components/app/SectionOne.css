@@ -9,7 +9,6 @@
 }
 
 .section-header p{
-  font-family: 'Playfair Display', serif;
   font-size: 25px;
   color: var(--main-ribbon-color);
   margin-bottom: 20px;
@@ -21,7 +20,6 @@
 
 
 #learn{
-  font-family: 'Playfair Display', serif;
   display: inline-block;
   padding:0.7em 1.7em;
   margin:0 0.3em 0.3em 0;
