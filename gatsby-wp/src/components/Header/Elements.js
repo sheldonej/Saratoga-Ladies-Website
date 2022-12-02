@@ -39,7 +39,7 @@ export const DropBtn = styled.div`
     background-color: rgba(0,0,0,0);
     color: var(--saratoga-red);
     padding: 5px 0px;
-    font-size: 16px;
+    font-size: var(--saratoga-small-text);
     border: none;
     text-align: center;
     align-items: end;
