@@ -3,16 +3,18 @@ import { ContentContainer, SectionOneThirdContainer, SectionTwoThirdContainer,
     SectionWrapper, SectionPreHeaderText  } from './SectionElements' 
 import DoubleCircle from "../../DoubleCircle/index.jsx"
 
+import {SectionThreeHeader, SectionThreeSubHeader, SectionThreeParagraph1} from '../../../assets/text/HomeText'
+
 const SectionThree = () => {
     return (
         <ContentContainer>
             <SectionTwoThirdContainer>
                 <SectionWrapper>
                     <SectionPreHeaderText>
-                        Lorem ipsum dolor sit amet
+                        {SectionThreeHeader}
                     </SectionPreHeaderText>
-                    <h2> Excepteur Sint Occaecat Cupidatat </h2> 
-                    <p> Enim neque volutpat ac tincidunt vitae semper. Nulla aliquet enim tortor at auctor urna. Porttitor leo a diam sollicitudin tempor. Adipiscing enim eu turpis egestas pretium aenean. Sed blandit libero volutpat sed cras ornare arcu dui vivamus. Aliquam etiam erat velit scelerisque in dictum. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Nec ultrices dui sapien eget mi proin sed libero enim. Turpis egestas maecenas pharetra convallis posuere morbi leo. Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. </p>
+                    <h2> {SectionThreeSubHeader} </h2> 
+                    <p>{SectionThreeParagraph1}</p>
                 </SectionWrapper>   
             </SectionTwoThirdContainer>
             <SectionOneThirdContainer>

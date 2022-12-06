@@ -4,6 +4,8 @@ import CircleType from 'circletype';
 import * as  RI from "react-icons/ri";
 import { GiStarsStack } from 'react-icons/gi'
 
+import { HeaderRibbonText } from '../../../assets/text/HomeText'
+
 import IMG1 from '../../../images/cemetery/1c-IMG_9910.jpg'
 import IMG2 from '../../../images/cemetery/IMG7.jpg'
 import IMG3 from '../../../images/cemetery/14-20180205_122325_HDR.jpg'
@@ -76,7 +78,7 @@ class HeroSection extends React.Component {
                 <div className="ribbon-content">
                   <GiStarsStack  fontSize="2.0em" />
                   <div className="ribbon-text" id='ribbonText' >
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit
+                    {HeaderRibbonText}
                   </div>
                   <GiStarsStack  fontSize="2.0em" />
                 </div>

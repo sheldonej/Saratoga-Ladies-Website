@@ -6,6 +6,9 @@ import { FooterData } from "../../Constants.js"
 import { FooterSection, FooterWrapper, FooterTop, FooterBottomContent, FooterBottom, FooterSectionList, FooterSectionTitle, 
    FirstColumn, SecondColumn, ThirdColumn,  FooterSectionIconWrapper, FooterIcon } from "./Elements.js"
 
+import {FooterSectionOneHeader, FooterSectionOneParagraph, FooterSectionTwoHeader, FooterSectionTwoParagraph, FooterSectionTwoButton, 
+  FooterSectionThreeHeader, FooterSectionFourItem1, FooterSectionFourItem2, FooterSectionFourItem3} from '../../assets/text/HomeText'
+
 function FooterComp(props) {
   return (
     <FooterWrapper>
@@ -13,12 +16,9 @@ function FooterComp(props) {
 
           <FirstColumn>
             {/* ------------------------------------------------------------------------------ */}
-            <FooterSectionTitle>Our Mission</FooterSectionTitle>
+            <FooterSectionTitle>{FooterSectionOneHeader}</FooterSectionTitle>
             <p>  
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum 
-              explicabo reprehenderit optio amet ab temporibus asperiores quasi 
-              cupiditate. Voluptatum ducimus voluptates voluptas.
+             {FooterSectionOneParagraph}
             </p>
             <FooterSectionIconWrapper>
                       <FooterIcon><FaLinkedinIn size={'1.25em'} color={'#fff'}/></FooterIcon>
@@ -33,11 +33,11 @@ function FooterComp(props) {
  
             <SecondColumn>
               {/* ------------------------------------------------------------------------------ */}
-              <FooterSectionTitle>Join Our Email List</FooterSectionTitle>
+              <FooterSectionTitle>{FooterSectionTwoHeader}</FooterSectionTitle>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas.
+                {FooterSectionTwoParagraph}
               </p>
-              <button> Sign Up </button> 
+              <button>{FooterSectionTwoButton}</button> 
               {/* ------------------------------------------------------------------------------ */}   
             </SecondColumn>  
 
@@ -45,7 +45,7 @@ function FooterComp(props) {
  
           <ThirdColumn>
             {/* ------------------------------------------------------------------------------ */}
-            <FooterSectionTitle>Navigation</FooterSectionTitle>
+            <FooterSectionTitle>{FooterSectionThreeHeader}</FooterSectionTitle>
             <FooterSectionList>
               { FooterData.map((item) => {
                   return <li><a /*to={item.path}*/> {item.title}</a></li>
@@ -57,7 +57,7 @@ function FooterComp(props) {
       </FooterTop>
       <FooterBottom>
         <FooterBottomContent>
-            Lorem Ipsum &nbsp; | &nbsp; Dalor Amut &nbsp; | &nbsp; © 2022 Saratoga Ladies
+            {FooterSectionFourItem1} &nbsp; | &nbsp; {FooterSectionFourItem2} &nbsp; | &nbsp; {FooterSectionFourItem3}
         </FooterBottomContent>
         <FooterBottomContent>
             An <div style={{color: 'red'}}> &nbsp;RCOS&nbsp; </div> Project

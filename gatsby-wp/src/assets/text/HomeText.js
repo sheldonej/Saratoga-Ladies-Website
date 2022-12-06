@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------*/
 /*          Text for the hero section of the landing page         */
 /*----------------------------------------------------------------*/
-export const HeaderRibbonText = "Lorem ipsum dolor sit amet"
+export const HeaderRibbonText = "Lorem ipsum dolor sit amet consectetur adipiscing elit"
 
 /*----------------------------------------------------------------*/
 /*                  Section 1 of Landing Page                     */
@@ -43,14 +43,6 @@ export const FooterSectionTwoButton = "Sign Up"
 /*                      Section 3 of Footer                       */
 /*----------------------------------------------------------------*/
 export const FooterSectionThreeHeader = "Navigation"
-export const FooterSectionTwoItem1 = "Jose"
-export const FooterSectionTwoItem2 = "Blog"
-export const FooterSectionTwoItem3 = "Donations"
-export const FooterSectionTwoItem4 = "FAQ"
-export const FooterSectionTwoItem5 = "New"
-export const FooterSectionTwoItem6 = "Set"
-export const FooterSectionTwoItem7 = "of"
-export const FooterSectionTwoItem8 = "links"
 
 /*----------------------------------------------------------------*/
 /*                      Section 4 of Footer                       */
