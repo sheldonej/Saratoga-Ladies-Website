@@ -2,7 +2,7 @@ import * as React from "react"
 import { ContentContainer, SectionOneThirdContainer, SectionHalfContainer , SectionTwoThirdContainer,
     SectionWrapper, SectionHeaderText , ImageFrame } from './SectionElements' 
 import LinedHeader from "../../LinedHeader/index.jsx"
-//import DoubleCircle from "../../DoubleCircle/index.jsx"
+
 
 import {SectionTwoHeader, SectionTwoParagraph1, SectionTwoParagraph2} from '../../../assets/text/HomeText'
 

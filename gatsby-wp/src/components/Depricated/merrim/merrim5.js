@@ -11,11 +11,8 @@ const MatthewsPage = () => (
     
     <h1 style={{ textAlign: "center"}}>Matthew Merritt</h1>
       <div>
-        {/* (TODO): Utilize prop to select image 
-
-        // TODO: Change class to className
+        {/*Notes:
         
-
         Size Props
         * Notes: sizes for circles: s: small, m: medium, l: large
         * parameters: circle1-size, circle2-size

@@ -1,5 +1,4 @@
 import * as React from "react"
-//import CircleType from `circletype`;
 import * as  RI from "react-icons/ri";
 import IMG1 from '../../images/cemetery/1c-IMG_9910.jpg'
 import IMG2 from '../../images/cemetery/IMG7.jpg'

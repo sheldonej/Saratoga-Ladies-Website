@@ -37,14 +37,6 @@ export function Q4(props) {
     );
 }
 
-
-// components to be used for page component 4 (in development)
-// change name of the component to double circle
-// (TODO): use usestate(for functional components - set up logic based off of "s" "m" "l" for circles) 
-// that would adjust the size of the circles (from props input)
-// (TODO): add the new double circle into a larger component that uses "flex row (css) for styling"
-
-// make image height equals 100
 export function DoubleCircles(props) {
 
     return (
