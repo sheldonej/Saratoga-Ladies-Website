@@ -1,1 +1,30 @@
+import React from 'react'
+import GoogleMapReact from 'google-map-react'
 
+const defaultProps = {
+    center: {
+        lat: 43.02645994574637,
+        lng: -73.61556793949747,
+
+    },
+    zoom: 10,
+}
+
+const AComponent = ({ text }) => <div>{text}</div>
+
+const GoogleMap = () => (
+    <div style={{ height: '30vh', width: '30%' }}>
+        <GoogleMapReact
+            bootstrapURLKeys={{ key: "insertKeyHere" }}
+            defaultCenter={defaultProps.center}
+            defaultZoom={defaultProps.zoom}
+        >
+            <AComponent
+                lat={43.02645994574637}
+                lng={-73.61556793949747}
+            />
+        </GoogleMapReact>
+    </div>
+)
+
+export default GoogleMap
