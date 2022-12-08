@@ -2,21 +2,21 @@
     border-radius: 50%;
    border: 25px solid var(--saratoga-blue);
    box-shadow: 0 0 5px 5px var(--saratoga-red);
-    width: 300px;
-    height: 300px;
-    margin: 150px;
+    width: 350px;
+    height: 350px;
+    margin: 130px;
   }
   
   
   #dotcircle {
-      background: #385a94;
+      background: var(--saratoga-blue);
       border-radius: 50%;
       height:40px;
       width:40px;
       position: relative;
       box-shadow: 0 0 5px 5px var(--saratoga-red);
-      bottom: 144px;
-      left:277px;
+      bottom: 128px;
+      left:281px;
       
   }
 
@@ -25,9 +25,9 @@
   .dots{
   
   border-left: 4px dashed var(--saratoga-blue);
-  padding: 40px;
-  left: 295px;
+  padding: 35px;
+  left: 300px;
   position: relative;
-  bottom: 150px;
+  bottom: 133px;
   
   }
