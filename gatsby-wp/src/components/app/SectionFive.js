@@ -3,12 +3,16 @@ import "./SectionFive.css"
 import firstImage from "../../assets/images/cemetery/C130(2).jpg"
 import secondImage from "../../assets/images/cemetery/ChildFoldingFlag.jpg"
 import thirdImage from "../../assets/images/cemetery/Shop.jpg"
+import LinedHeader from "./LinedHeader"
 
 
 
 const SectionFive = () => {
     return (
-<div className = "flex section-header">
+<div className="section-header">
+<LinedHeader></LinedHeader>
+<div className = "flex">
+
     {/* Make these a component */}
     
 <div className = "flow-col">
@@ -33,7 +37,7 @@ const SectionFive = () => {
  </div>
     
 </div>
-
+</div>
     
     )
 }
