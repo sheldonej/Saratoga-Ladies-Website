@@ -1,0 +1,33 @@
+.dotImg {
+    border-radius: 50%;
+   border: 25px solid var(--saratoga-blue);
+   box-shadow: 0 0 5px 5px var(--saratoga-red);
+    width: 300px;
+    height: 300px;
+    margin: 150px;
+  }
+  
+  
+  #dotcircle {
+      background: #385a94;
+      border-radius: 50%;
+      height:40px;
+      width:40px;
+      position: relative;
+      box-shadow: 0 0 5px 5px var(--saratoga-red);
+      bottom: 144px;
+      left:277px;
+      
+  }
+
+  
+  
+  .dots{
+  
+  border-left: 4px dashed var(--saratoga-blue);
+  padding: 40px;
+  left: 295px;
+  position: relative;
+  bottom: 150px;
+  
+  }

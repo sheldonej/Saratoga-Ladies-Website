@@ -6,6 +6,7 @@ import SlideshowBanner from "../components/app/SlideshowBanner"
 import PageContentContainer from "../components/app/PageContentContainer"
 import SectionOne from "../components/app/SectionOne"
 import DoubleCircles from "../components/DoubleCircle/index"
+import SectionFive from "../components/app/SectionFive"
 
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
@@ -28,7 +29,7 @@ const IndexPage = () => (
       <PageContentContainer height={400} dropShadow> 4 
         <DoubleCircles />
       </PageContentContainer> 
-      <PageContentContainer height={400}> 5 </PageContentContainer> 
+      <PageContentContainer height={'auto'}> <SectionFive/> </PageContentContainer> 
     </PageWrapper>
   </React.Fragment>
 )
