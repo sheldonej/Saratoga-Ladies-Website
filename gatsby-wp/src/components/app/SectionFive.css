@@ -1,14 +1,14 @@
 .dotImg {
     border-radius: 50%;
    border: 25px solid var(--saratoga-white);
-   box-shadow: 0 0 5px 5px var(--saratoga-red);
+   box-shadow: 0 0 5px 5px var(--saratoga-blue);
     width: 350px;
     height: 350px;
     margin: 130px;
   }
   
   hr{
-    border-top: 8px solid var(--saratoga-blue);
+    border-top: 8px solid var(--saratoga-red);
     border-radius: 10px;
     margin-left: 60px;
     margin-right: 70px;
@@ -20,7 +20,7 @@
       height:40px;
       width:40px;
       position: relative;
-      box-shadow: 0 0 5px 5px var(--saratoga-red);
+      box-shadow: 0 0 5px 5px var(--saratoga-blue);
       bottom: 128px;
       left:281px;
       
@@ -30,7 +30,7 @@
   
   .dots{
   
-  border-left: 4px dashed var(--saratoga-red);
+  border-left: 4px dashed var(--saratoga-blue);
   padding: 35px;
   left: 300px;
   position: relative;
