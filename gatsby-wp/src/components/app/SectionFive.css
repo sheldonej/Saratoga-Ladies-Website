@@ -1,15 +1,21 @@
 .dotImg {
     border-radius: 50%;
-   border: 25px solid var(--saratoga-blue);
+   border: 25px solid var(--saratoga-white);
    box-shadow: 0 0 5px 5px var(--saratoga-red);
     width: 350px;
     height: 350px;
     margin: 130px;
   }
   
+  hr{
+    border-top: 8px solid var(--saratoga-blue);
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 70px;
+  }
   
   #dotcircle {
-      background: var(--saratoga-blue);
+      background: var(--saratoga-white);
       border-radius: 50%;
       height:40px;
       width:40px;
@@ -24,7 +30,7 @@
   
   .dots{
   
-  border-left: 4px dashed var(--saratoga-blue);
+  border-left: 4px dashed var(--saratoga-red);
   padding: 35px;
   left: 300px;
   position: relative;

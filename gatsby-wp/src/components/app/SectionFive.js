@@ -19,6 +19,7 @@ const SectionFive = () => {
     <img className="dotImg"  src={firstImage} alt="Avatar"/>
     <div class="dots"></div>
     <div id="dotcircle"></div>
+    <hr></hr>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
  </div>
       
@@ -26,6 +27,7 @@ const SectionFive = () => {
     <img className="dotImg"  src={secondImage} alt="Avatar"/>
     <div class="dots"></div>
     <div id="dotcircle"></div>
+    <hr></hr>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
  </div>
 
@@ -33,6 +35,7 @@ const SectionFive = () => {
     <img className="dotImg"  src={thirdImage} alt="Avatar"/>
     <div class="dots"></div>
     <div id="dotcircle"></div>
+    <hr></hr>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
  </div>
     
