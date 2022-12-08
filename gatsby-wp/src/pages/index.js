@@ -26,10 +26,10 @@ const IndexPage = () => (
       {/* THIS CODE ABOVE NEEDS TO BE IN THE THE PAGE CONTAINER COMPONENT AS FOLLOWS */}
       <PageContentContainer height={400} dropShadow> 2 </PageContentContainer> 
       <PageContentContainer height={400} > 3 </PageContentContainer> 
-      <PageContentContainer height={400} dropShadow> 4 
-        <DoubleCircles />
+      <PageContentContainer height={'auto'} dropShadow> 
+       <SectionFive/>
       </PageContentContainer> 
-      <PageContentContainer height={'auto'}> <SectionFive/> </PageContentContainer> 
+      <PageContentContainer height={'auto'}> <DoubleCircles />  </PageContentContainer> 
     </PageWrapper>
   </React.Fragment>
 )
