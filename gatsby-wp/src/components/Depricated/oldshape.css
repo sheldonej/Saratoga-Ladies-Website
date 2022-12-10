@@ -1,0 +1,71 @@
+ #square
+ {
+    position:absolute;
+    background: #ef2222;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    transform:rotate(45deg);
+    left:365px;
+    top:120px;
+}
+
+ #square2nd
+ {
+     position:absolute;
+     background: #9b79ff;
+     height: 250px;
+     width: 250px;
+     text-align: center;
+     left:600px;
+     top:300px;
+ }
+
+ #textar
+ {
+     position:absolute;
+     bottom: 100px;
+     left:300px;
+     resize: none;
+     width: 250px;
+     height: 250px;
+     color: #fff4db;
+ }
+
+ #centeredtextar
+ {
+     position:absolute;
+     bottom: 200px;
+     right:350px;
+     color: #0015ff;
+ }
+
+ .circles
+ {
+    position:absolute;
+    right:330px;
+    top:80px;
+    height: 250px;
+    width: 250px;
+    background-color: #ff9811;
+    border-radius: 50%;
+ }
+ .component1
+ {
+     grid-area: One;
+ }
+
+ .component2
+ {
+     grid-area: Two;
+ }
+
+ .component3
+ {
+     grid-area: Three;
+ }
+
+ .component4
+ {
+     grid-area: Four;
+ }
